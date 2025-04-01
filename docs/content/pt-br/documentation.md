@@ -7,9 +7,9 @@ license: https://github.com/gohugoio/hugo/blob/master/docs/content/LICENSE.md
 title: Documentação do Hugo
 linkTitle: Docs
 description: |
-Hugo é o mecanismo de site estático mais rápido do mundo.
-Ele é escrito em Go (também conhecido como Golang) e desenvolvido por bep,
-spf13 e amigos.
+  Hugo é o mecanismo de site estático mais rápido do mundo.
+  Ele é escrito em Go (também conhecido como Golang) e desenvolvido por bep,
+  spf13 e amigos.
 menu:
   main:
     weight: 1
