@@ -1,49 +1,78 @@
 ---
-title: The world’s fastest framework for building websites
+source_url: https://github.com/gohugoio/hugo/blob/master/docs/content/en/_index.md
+revision: af0cb57aaf668278551454678eac60b17348b13c
+status: ready
+
+title: O framework mais rápido do mundo para construção de sites
 date: 2017-03-02T12:00:00-05:00
 features:
-  - heading: Blistering Speed
+  - heading: Velocidade alucinante
     image_path: /images/icon-fast.svg
-    tagline: What's modern about waiting for your site to build?
-    copy: Hugo is the fastest tool of its kind. At <1 ms per page, the average site builds in less than a second.
+    tagline: O que há de moderno em esperar seu site ficar pronto?
+    copy: |
+      Hugo é a ferramenta mais rápida do gênero.
+      Com <1 ms por página, o site médio é construído em menos de um segundo.
 
-  - heading: Robust Content Management
+  - heading: Gerenciamento de conteúdo robusto
     image_path: /images/icon-content-management.svg
-    tagline: Flexibility rules. Hugo is a content strategist's dream.
-    copy: Hugo supports unlimited content types, taxonomies, menus, dynamic API-driven content, and more, all without plugins.
+    tagline: |
+      A flexibilidade comanda.
+      Hugo é o sonho de qualquer estrategista de conteúdo.
+    copy: |
+      O Hugo oferece suporte a ilimitados tipos de conteúdo, taxonomias, menus,
+      conteúdo dinâmico baseado em API e muito mais, tudo sem plugins.
 
-  - heading: Shortcodes
+  - heading: Códigos curtos
     image_path: /images/icon-shortcodes.svg
-    tagline: Hugo's shortcodes are Markdown's hidden superpower.
-    copy: We love the beautiful simplicity of Markdown’s syntax, but there are times when we want more flexibility. Hugo shortcodes allow for both beauty and flexibility.
+    tagline: Os código curtos do Hugo são o superpoder oculto do Markdown.
+    copy: |
+      Nós amamos a bela simplicidade da sintaxe do Markdown, mas há momentos em
+      que queremos mais flexibilidade.
+      Os código curtos do Hugo permitem trabalhar com beleza e flexibilidade.
 
-  - heading: Built-in Templates
+  - heading: Modelos integrados
     image_path: /images/icon-built-in-templates.svg
-    tagline: Hugo has common patterns to get your work done quickly.
-    copy: Hugo ships with pre-made templates to make quick work of SEO, commenting, analytics and other functions. One line of code, and you're done.
+    tagline: |
+      O Hugo tem padrões comuns para que seu trabalho seja concluído
+      rapidamente.
+    copy: |
+      O Hugo vem com modelos pré-fabricados para fazer um trabalho rápido de
+      SEO, comentários, análises e outras funções.
+      Uma linha de código e pronto.
 
-  - heading: Multilingual and i18n
+  - heading: Multilinguagem e internacionalização
     image_path: /images/icon-multilingual2.svg
-    tagline: Polyglot baked in.
-    copy: Hugo provides full i18n support for multi-language sites with the same straightforward development experience Hugo users love in single-language sites.
+    tagline: Poliglota integrado.
+    copy: |
+      O Hugo oferece suporte completo a internacionalização para sites
+      multilíngues com a mesma experiência de desenvolvimento simples que as
+      pessoas usuárias do Hugo adoram em sites de idioma único.
 
-  - heading: Custom Outputs
+  - heading: Saídas personalizadas
     image_path: /images/icon-custom-outputs.svg
-    tagline: HTML not enough?
-    copy: Hugo allows you to output your content in multiple formats, including JSON or AMP, and makes it easy to create your own.
+    tagline: HTML não é suficiente?
+    copy: |
+      O Hugo permite que você produza seu conteúdo em vários formatos, incluindo
+      JSON ou AMP, e facilita a criação do seu próprio formato.
 sections:
-  - heading: "300+ Themes"
-    cta: Check out the Hugo themes.
-    link: https://themes.gohugo.io/
-    color_classes: bg-accent-color white
-    image: /images/homepage-screenshot-hugo-themes.jpg
-    copy: "Hugo provides a robust theming system that is easy to implement but capable of producing even the most complicated websites."
-  - heading: "Capable Templating"
-    cta: Get Started.
-    link: templates/
-    color_classes: bg-primary-color-light black
-    image: /images/home-page-templating-example.png
-    copy: "Hugo's Go-based templating provides just the right amount of logic to build anything from the simple to complex."
+    - heading: Mais de 300 temas
+      cta: Confira os temas do Hugo.
+      link: https://themes.gohugo.io/
+      color_classes: bg-accent-color white
+      image: /images/homepage-screenshot-hugo-themes.jpg
+      copy: |
+        O Hugo fornece um sistema de temas robusto que é fácil de implementar,
+        mas capaz de produzir até os sites mais complicados.
+    - heading: Modelos capazes
+      cta: Comece agora.
+      link: templates/
+      color_classes: bg-primary-color-light black
+      image: /images/home-page-templating-example.png
+      copy: |
+        Os modelos baseados em Go do Hugo fornecem a quantidade certa de lógica
+        para construir qualquer coisa, do simples ao complexo.
 ---
 
-Hugo is one of the most popular open-source static site generators. With its amazing speed and flexibility, Hugo makes building websites fun again.
+Hugo é um dos geradores de sites estáticos de código aberto mais populares.
+Com sua velocidade e flexibilidade incríveis, o Hugo torna a construção de sites
+divertida novamente.
