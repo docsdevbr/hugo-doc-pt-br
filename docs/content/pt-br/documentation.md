@@ -1,7 +1,15 @@
 ---
-title: Hugo Documentation
+source_url: https://github.com/gohugoio/hugo/blob/master/docs/content/en/documentation.md
+revision: 304a7e5e7439a8a45449623057cad790c6053e4d
+status: ready
+license: https://github.com/gohugoio/hugo/blob/master/docs/content/LICENSE.md
+
+title: Documentação do Hugo
 linkTitle: Docs
-description: Hugo is the world's fastest static website engine. It's written in Go (aka Golang) and developed by bep, spf13 and friends.
+description: |
+Hugo é o mecanismo de site estático mais rápido do mundo.
+Ele é escrito em Go (também conhecido como Golang) e desenvolvido por bep,
+spf13 e amigos.
 menu:
   main:
     weight: 1
@@ -9,14 +17,22 @@ weight: 1
 layout: list
 ---
 
-A fast and flexible [static site generator] built with love by [bep], [spf13], and [friends] in [Go].
+Um [gerador de site estático] rápido e flexível criado com amor
+por [bep], [spf13] e [amigos] em [Go].
 
-Hugo is optimized for speed and designed for flexibility. With its advanced templating system and fast asset pipelines, Hugo renders a complete site in seconds, often less.
+Hugo é otimizado para velocidade e projetado para flexibilidade.
+Com seu sistema avançado de modelos e esteiras de _assets_ rápidos, Hugo
+renderiza um site completo em segundos, geralmente menos.
+
+Abaixo você encontrará algumas das páginas mais comuns e úteis da nossa
+documentação.
+
+[amigos]: https://github.com/gohugoio/hugo/graphs/contributors
 
 [bep]: https://github.com/bep
-[spf13]: https://github.com/spf13
-[friends]: https://github.com/gohugoio/hugo/graphs/contributors
-[go]: https://go.dev/
-[static site generator]: https://en.wikipedia.org/wiki/Static_site_generator
 
-Below you will find some of the most common and helpful pages from our documentation.
+[gerador de site estático]: https://en.wikipedia.org/wiki/Static_site_generator
+
+[go]: https://go.dev/
+
+[spf13]: https://github.com/spf13
