@@ -2,6 +2,7 @@
 source_url: https://github.com/gohugoio/hugo/blob/master/docs/content/en/_index.md
 revision: af0cb57aaf668278551454678eac60b17348b13c
 status: ready
+license: https://github.com/gohugoio/hugo/blob/master/docs/content/LICENSE.md
 
 title: O framework mais rápido do mundo para construção de sites
 date: 2017-03-02T12:00:00-05:00
