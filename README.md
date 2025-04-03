@@ -25,7 +25,7 @@ Você pode apoiar o projeto através do [GitHub Sponsors][github-sponsors] ou
 
 ## Licença
 
-Copyright (c) The Hugo Authors.<br>
+Copyright (c) 2013–2025 The Hugo Authors.<br>
 Os logotipos Hugo são protegidos por direitos autorais de Steve Francia de
 2013–2025.
 O Hugo Gopher é baseado em um trabalho original de Renée French.
