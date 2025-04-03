@@ -7,8 +7,12 @@
 # The original work was translated from English into Brazilian Portuguese.
 # https://github.com/gohugoio/hugoDocs/blob/master/content/LICENSE.md
 
-title: Quick start
-description: Create a Hugo site in minutes.
+source_url: https://github.com/gohugoio/hugoDocs/blob/master/content/en/getting-started/quick-start.md
+revision: c540e6d295880311a855308b1e14180cabbcd24a
+status: ready
+
+title: Início rápido
+description: Crie um site Hugo em minutos.
 categories: []
 keywords: []
 params:
@@ -17,42 +21,44 @@ weight: 10
 aliases: [/quickstart/,/overview/quickstart/]
 ---
 
-In this tutorial you will:
+Neste tutorial você irá:
 
-1. Create a site
-1. Add content
-1. Configure the site
-1. Publish the site
+1. Criar um site
+1. Adicionar conteúdo
+1. Configurar o site
+1. Publicar o site
 
-## Prerequisites
+## Pré-requisitos
 
-Before you begin this tutorial you must:
+Antes de começar este tutorial, você deve:
 
-1. [Install Hugo] (extended or extended/deploy edition, {{% param "minVersion" %}} or later)
-1. [Install Git]
+1. [Instalar o Hugo] (edição estendida ou estendida/implantação,
+   {{% param "minVersion" %}} ou posterior)
+1. [Instalar o Git]
 
-You must also be comfortable working from the command line.
+Você também deve estar confortável trabalhando na linha de comando.
 
-## Create a site
+## Crie um site
 
-### Commands
+### Comandos
 
 > [!note]
-> **If you are a Windows user:**
+> **Se você for uma pessoa usuária do Windows:**
 >
-> - Do not use the Command Prompt
-> - Do not use Windows PowerShell
-> - Run these commands from [PowerShell] or a Linux terminal such as WSL or Git > Bash
+> - Não use o Prompt de Comando
+> - Não use o Windows PowerShell
+> - Execute estes comandos do [PowerShell] ou de um terminal Linux, como WSL ou Git > Bash
 >
-> PowerShell and Windows PowerShell [are different applications].
+> PowerShell e Windows PowerShell [são aplicações diferentes].
 
-Verify that you have installed Hugo {{% param "minVersion" %}} or later.
+Verifique se você instalou o Hugo {{% param "minVersion" %}} ou posterior.
 
 ```text
 hugo version
 ```
 
-Run these commands to create a Hugo site with the [Ananke] theme. The next section provides an explanation of each command.
+Execute estes comandos para criar um site Hugo com o tema [Ananke].
+A próxima seção fornece uma explicação de cada comando.
 
 ```text
 hugo new site quickstart
@@ -63,164 +69,219 @@ echo "theme = 'ananke'" >> hugo.toml
 hugo server
 ```
 
-View your site at the URL displayed in your terminal. Press `Ctrl + C` to stop Hugo's development server.
+Acesse seu site usando a URL exibida em seu terminal.
+Pressione `Ctrl + C` para parar o servidor de desenvolvimento do Hugo.
 
-### Explanation of commands
+### Explicação dos comandos
 
-Create the [directory structure] for your project in the `quickstart` directory.
+Criar a [estrutura de diretório] para seu projeto no diretório `quickstart`.
 
 ```text
 hugo new site quickstart
 ```
 
-Change the current directory to the root of your project.
+Alterar o diretório atual para a raiz do seu projeto.
 
 ```text
 cd quickstart
 ```
 
-Initialize an empty Git repository in the current directory.
+Inicializar um repositório Git vazio no diretório atual.
 
 ```text
 git init
 ```
 
-Clone the [Ananke] theme into the `themes` directory, adding it to your project as a [Git submodule].
+Clonar o tema [Ananke] no diretório `themes`, adicionando-o ao seu projeto como
+um [submódulo Git].
 
 ```text
 git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke
 ```
 
-Append a line to the site configuration file, indicating the current theme.
+Acrescentar uma linha ao arquivo de configuração do site, indicando o tema atual.
 
 ```text
 echo "theme = 'ananke'" >> hugo.toml
 ```
 
-Start Hugo's development server to view the site.
+Iniciar o servidor de desenvolvimento do Hugo para visualizar o site.
 
 ```text
 hugo server
 ```
 
-Press `Ctrl + C` to stop Hugo's development server.
+Pressione `Ctrl + C` para parar o servidor de desenvolvimento do Hugo.
 
-## Add content
+## Adicione conteúdo
 
-Add a new page to your site.
+Adicione uma nova página ao seu site.
 
 ```text
-hugo new content content/posts/my-first-post.md
+hugo new content content/posts/meu-primeiro-post.md
 ```
 
-Hugo created the file in the `content/posts` directory. Open the file with your editor.
+O Hugo criou o arquivo no diretório `content/posts`.
+Abra o arquivo com seu editor.
 
 ```text
 +++
-title = 'My First Post'
+title = 'Meu primeiro post'
 date = 2024-01-14T07:07:07+01:00
 draft = true
 +++
 ```
 
-Notice the `draft` value in the [front matter] is `true`. By default, Hugo does not publish draft content when you build the site. Learn more about [draft, future, and expired content].
+Observe que o valor `draft` (rascunho) na [_front matter_] é `true`.
+Por padrão, o Hugo não publica conteúdo de rascunho quando você cria o site.
+Saiba mais sobre [conteúdo de rascunho, futuro e expirado].
 
-Add some [Markdown] to the body of the post, but do not change the `draft` value.
+Adicione um pouco de [Markdown] ao corpo do post, mas não altere o valor de
+`draft`.
 
 ```text
 +++
-title = 'My First Post'
+title = 'Meu primeiro post'
 date = 2024-01-14T07:07:07+01:00
 draft = true
 +++
-## Introduction
+## Introdução
 
-This is **bold** text, and this is *emphasized* text.
+Este é um texto em **negrito** e este é um texto em *ênfase*.
 
-Visit the [Hugo](https://gohugo.io) website!
+Visite o site do [Hugo](https://gohugo.io)!
 ```
 
-Save the file, then start Hugo's development server to view the site. You can run either of the following commands to include draft content.
+Salve o arquivo e inicie o servidor de desenvolvimento do Hugo para visualizar o
+site.
+Você pode executar qualquer um dos seguintes comandos para incluir conteúdo de
+rascunho.
 
 ```text
 hugo server --buildDrafts
 hugo server -D
 ```
 
-View your site at the URL displayed in your terminal. Keep the development server running as you continue to add and change content.
+Acesse seu site usando a URL exibida em seu terminal.
+Mantenha o servidor de desenvolvimento em execução enquanto você continua
+adicionando e alterando conteúdo.
 
-When satisfied with your new content, set the front matter `draft` parameter to `false`.
+Quando estiver contente com seu novo conteúdo, defina o parâmetro de _front
+matter_ `draft` como `false`.
 
 > [!note]
-> Hugo's rendering engine conforms to the CommonMark [specification] for Markdown. The CommonMark organization provides a useful [live testing tool] powered by the reference implementation.
+> O mecanismo de renderização do Hugo está em conformidade com a [especificação]
+> CommonMark para Markdown.
+> A organização CommonMark fornece uma [ferramenta útil de teste ao vivo]
+> alimentada pela implementação de referência.
 
-## Configure the site
+## Configure o site
 
-With your editor, open the [site configuration] file (`hugo.toml`) in the root of your project.
+Com seu editor, abra o arquivo de [configuração do site] (`hugo.toml`) na raiz
+do seu projeto.
 
 ```text
 baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+languageCode = 'pt-br'
+title = 'Meu novo site Hugo'
 theme = 'ananke'
 ```
 
-Make the following changes:
+Faça as seguintes alterações:
 
-1. Set the `baseURL` for your production site. This value must begin with the protocol and end with a slash, as shown above.
-1. Set the `languageCode` to your language and region.
-1. Set the `title` for your production site.
+1. Defina a `baseURL` (URL base) para seu site de produção.
+   Este valor deve começar com o protocolo e terminar com uma barra, conforme
+   mostrado acima.
+1. Defina o `languageCode` (código de idioma) para seu idioma e região.
+1. Defina o `title` (título) para seu site de produção.
 
-Start Hugo's development server to see your changes, remembering to include draft content.
+Inicie o servidor de desenvolvimento do Hugo para ver suas alterações,
+lembrando-se de incluir o conteúdo do rascunho.
 
 ```text
 hugo server -D
 ```
 
 > [!note]
-> Most theme authors provide configuration guidelines and options. Make sure to visit your theme's repository or documentation site for details.
+> A maioria das pessoas autoras de temas fornece diretrizes e opções de
+> configuração.
+> Certifique-se de visitar o repositório do seu tema ou o site de documentação
+> para obter detalhes.
 >
-> [The New Dynamic], authors of the Ananke theme, provide [documentation] for configuration and usage. They also provide a [demonstration site].
+> As pessoas da [New Dynamic], autoras do tema Ananke, fornecem [documentação]
+> para configuração e uso.
+> Elas também fornecem um [site de demonstração].
 
-## Publish the site
+## Publique o site
 
-In this step you will _publish_ your site, but you will not _deploy_ it.
+Nesta etapa, você _publicará_ seu site, mas não o _implantará_.
 
-When you _publish_ your site, Hugo creates the entire static site in the `public` directory in the root of your project. This includes the HTML files, and assets such as images, CSS files, and JavaScript files.
+Quando você _publica_ seu site, o Hugo cria todo o site estático no diretório
+`public` na raiz do seu projeto.
+Isso inclui os arquivos HTML e _assets_ como imagens, arquivos CSS e arquivos
+JavaScript.
 
-When you publish your site, you typically do _not_ want to include [draft, future, or expired content]. The command is simple.
+Quando você publica seu site, normalmente _não_ deseja incluir
+[conteúdo de rascunho, futuro ou expirado].
+O comando é simples.
 
 ```text
 hugo
 ```
 
-To learn how to _deploy_ your site, see the [host and deploy] section.
+Para aprender como _implantar_ seu site, consulte a seção de
+[hospedagem e implantação].
 
-## Ask for help
+## Peça ajuda
 
-Hugo's [forum] is an active community of users and developers who answer questions, share knowledge, and provide examples. A quick search of over 20,000 topics will often answer your question. Please be sure to read about [requesting help] before asking your first question.
+O [fórum] do Hugo é uma comunidade ativa de pessoas usuárias e desenvolvedoras
+que respondem a perguntas, compartilham conhecimento e fornecem exemplos.
+Uma busca rápida em mais de 20.000 tópicos geralmente responderá à sua pergunta.
+Certifique-se de ler sobre [como solicitar ajuda] antes de fazer sua primeira
+pergunta.
 
-## Other resources
+## Outros recursos
 
-For other resources to help you learn Hugo, including books and video tutorials, see the [external learning resources](/getting-started/external-learning-resources/) page.
+Para outros recursos para ajudar você a aprender sobre o Hugo, incluindo livros
+e tutoriais em vídeo, consulte a página de
+[recursos de aprendizagem externos](/getting-started/external-learning-resources/).
+
+[A New Dynamic]: https://www.thenewdynamic.com/
 
 [Ananke]: https://github.com/theNewDynamic/gohugo-theme-ananke
-[are different applications]: https://learn.microsoft.com/en-us/powershell/scripting/whats-new/differences-from-windows-powershell?view=powershell-7.3
-[demonstration site]: https://gohugo-ananke-theme-demo.netlify.app/
-[directory structure]: /getting-started/directory-structure/
-[documentation]: https://github.com/theNewDynamic/gohugo-theme-ananke#readme
-[draft, future, and expired content]: /getting-started/usage/#draft-future-and-expired-content
-[draft, future, or expired content]: /getting-started/usage/#draft-future-and-expired-content
-[forum]: https://discourse.gohugo.io/
-[front matter]: /content-management/front-matter/
-[Git submodule]: https://git-scm.com/book/en/v2/Git-Tools-Submodules
-[host and deploy]: /host-and-deploy/
-[Install Git]: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
-[Install Hugo]: /installation/
-[live testing tool]: https://spec.commonmark.org/dingus/
+
+[como solicitar ajuda]: https://discourse.gohugo.io/t/requesting-help/9132
+
+[configuração do site]: /configuration/
+
+[conteúdo de rascunho, futuro e expirado]: /getting-started/usage/#draft-future-and-expired-content
+
+[conteúdo de rascunho, futuro ou expirado]: /getting-started/usage/#draft-future-and-expired-content
+
+[documentação]: https://github.com/theNewDynamic/gohugo-theme-ananke#readme
+
+[especificação]: https://spec.commonmark.org/
+
+[estrutura de diretório]: /getting-started/directory-structure/
+
+[ferramenta útil de teste ao vivo]: https://spec.commonmark.org/dingus/
+
+[fórum]: https://discourse.gohugo.io/
+
+[_front matter_]: /content-management/front-matter/
+
+[hospedagem e implantação]: /host-and-deploy/
+
+[Instalar o Git]: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+
+[Instalar o Hugo]: /installation/
+
 [Markdown]: https://daringfireball.net/projects/markdown
+
 [PowerShell]: https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows
-[requesting help]: https://discourse.gohugo.io/t/requesting-help/9132
-[site configuration]: /configuration/
-[specification]: https://spec.commonmark.org/
-[The New Dynamic]: https://www.thenewdynamic.com/
+
+[são aplicações diferentes]: https://learn.microsoft.com/en-us/powershell/scripting/whats-new/differences-from-windows-powershell?view=powershell-7.3
+
+[site de demonstração]: https://gohugo-ananke-theme-demo.netlify.app/
+
+[submódulo Git]: https://git-scm.com/book/en/v2/Git-Tools-Submodules
