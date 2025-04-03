@@ -7,10 +7,9 @@
 # The original work was translated from English into Brazilian Portuguese.
 # https://github.com/gohugoio/hugoDocs/blob/master/content/LICENSE.md
 
-source_url: https://github.com/gohugoio/hugo/blob/master/docs/content/en/documentation.md
-revision: 304a7e5e7439a8a45449623057cad790c6053e4d
+source_url: https://github.com/gohugoio/hugoDocs/blob/master/content/en/documentation.md
+revision: b6cae5cbc662fa92a00d123bd758fe1205b8a07e
 status: ready
-license: https://github.com/gohugoio/hugoDocs/blob/master/content/LICENSE.md
 
 title: Documentação do Hugo
 linkTitle: Docs
@@ -18,29 +17,19 @@ description: |
   Hugo é o mecanismo de site estático mais rápido do mundo.
   Ele é escrito em Go (também conhecido como Golang) e desenvolvido por bep,
   spf13 e amigos.
-menu:
-  main:
-    weight: 1
-weight: 1
 layout: list
 ---
 
-Um [gerador de site estático] rápido e flexível criado com amor
-por [bep], [spf13] e [amigos] em [Go].
+<!--
+If we want content on this page at some point, considering taking it from:
 
-Hugo é otimizado para velocidade e projetado para flexibilidade.
-Com seu sistema avançado de modelos e esteiras de _assets_ rápidos, Hugo
-renderiza um site completo em segundos, geralmente menos.
+- https://gohugo.io/about/introduction/
+- https://gohugo.io/about/features/
 
-Abaixo você encontrará algumas das páginas mais comuns e úteis da nossa
-documentação.
+Try to use the same language (e.g., tagline) everywhere:
 
-[amigos]: https://github.com/gohugoio/hugo/graphs/contributors
-
-[bep]: https://github.com/bep
-
-[gerador de site estático]: https://en.wikipedia.org/wiki/Static_site_generator
-
-[go]: https://go.dev/
-
-[spf13]: https://github.com/spf13
+- Home: https://gohugo.io/
+- Docs: https://gohugo.io/documentation/
+- Project repo: https://github.com/gohugoio/hugo?tab=readme-ov-file#readme
+- Docs repo: https://github.com/gohugoio/hugoDocs?tab=readme-ov-file#readme 
+-->
