@@ -1,0 +1,32 @@
+---
+# Copyright (c) 2013–2025 The Hugo Authors.
+# The Hugo logos are copyright (c) Steve Francia 2013–2025.
+# The Hugo Gopher is based on an original work by Renée French.
+
+# Documentation licensed under the Apache License, Version 2.0.
+# The original work was translated from English into Brazilian Portuguese.
+# https://github.com/gohugoio/hugoDocs/blob/master/content/LICENSE.md
+
+title: Configure sitemap
+linkTitle: Sitemap
+description: Configure the sitemap.
+categories: []
+keywords: []
+---
+
+These are the default sitemap configuration values. They apply to all pages unless overridden in front matter.
+
+{{< code-toggle config=sitemap />}}
+
+changefreq
+: (`string`) How frequently a page is likely to change. Valid values are `always`, `hourly`, `daily`, `weekly`, `monthly`, `yearly`, and `never`. With the default value of `""` Hugo will omit this field from the sitemap. See&nbsp;[details](https://www.sitemaps.org/protocol.html#changefreqdef).
+
+disable
+: {{< new-in 0.125.0 />}}
+: (`bool`) Whether to disable page inclusion. Default is `false`. Set to `true` in front matter to exclude the page.
+
+filename
+: (`string`) The name of the generated file. Default is `sitemap.xml`.
+
+priority
+: (`float`) The priority of a page relative to any other page on the site. Valid values range from 0.0 to 1.0. With the default value of `-1` Hugo will omit this field from the sitemap. See&nbsp;[details](https://www.sitemaps.org/protocol.html#prioritydef).

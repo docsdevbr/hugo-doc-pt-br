@@ -25,11 +25,12 @@ You can support the project through [GitHub Sponsors][github-sponsors] or
 
 ## License
 
-Copyright (c) The Hugo Authors.<br>
-The Hugo logos are copyright (c) Steve Francia 2013–2025. The Hugo Gopher is
-based on an original work by Renée French.
+Copyright (c) 2013–2025 The Hugo Authors.<br>
+The Hugo logos are copyright (c) Steve Francia 2013–2025.
+The Hugo Gopher is based on an original work by Renée French.
 
-Documentation licensed under the [Apache License, Version 2.0][license].
+Documentation licensed under the [Apache License, Version 2.0][license].<br>
+The original work was translated from English into Brazilian Portuguese.
 
 [badge-github-sponsors]: https://img.shields.io/github/sponsors/docsdevbr
 
