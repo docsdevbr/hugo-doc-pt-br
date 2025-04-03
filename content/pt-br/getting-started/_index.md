@@ -7,8 +7,12 @@
 # The original work was translated from English into Brazilian Portuguese.
 # https://github.com/gohugoio/hugoDocs/blob/master/content/LICENSE.md
 
-title: Getting started
-description: How to get started with Hugo.
+source_url: https://github.com/gohugoio/hugoDocs/blob/master/content/en/getting-started/_index.md
+revision: b6cae5cbc662fa92a00d123bd758fe1205b8a07e
+status: ready
+
+title: Começando
+description: Como começar com o Hugo.
 categories: []
 keywords: []
 weight: 10
