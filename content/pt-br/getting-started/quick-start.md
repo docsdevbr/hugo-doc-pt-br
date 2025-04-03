@@ -196,7 +196,7 @@ Faça as seguintes alterações:
 1. Defina o `languageCode` (código de idioma) para seu idioma e região.
 1. Defina o `title` (título) para seu _site_ de produção.
 
-Inicie o servidor de desenvolvimento do Hugo para ver suas alterações,
+Inicie o servidor de desenvolvimento do Hugo para verificar suas alterações,
 lembrando-se de incluir o conteúdo do rascunho.
 
 ```text
@@ -255,9 +255,9 @@ e tutoriais em vídeo, consulte a página de
 
 [configuração do _site_]: /configuration/
 
-[conteúdo de rascunho, futuro e expirado]: /getting-started/usage/#draft-future-and-expired-content
+[conteúdo de rascunho, futuro e expirado]: /getting-started/usage/#conteudo-de-rascunho-futuro-e-expirado
 
-[conteúdo de rascunho, futuro ou expirado]: /getting-started/usage/#draft-future-and-expired-content
+[conteúdo de rascunho, futuro ou expirado]: /getting-started/usage/#conteudo-de-rascunho-futuro-e-expirado
 
 [documentação]: https://github.com/theNewDynamic/gohugo-theme-ananke#readme
 
