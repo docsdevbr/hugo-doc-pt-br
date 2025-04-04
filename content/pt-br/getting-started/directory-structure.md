@@ -163,7 +163,7 @@ diretório e conteúdo compartilhado em outro:
 
 ```text
 home/
-└── user/
+└── usuario/
     ├── meu-site/
     │   ├── content/
     │   │   ├── livros/
@@ -174,7 +174,7 @@ home/
     │   ├── themes/
     │   │   └── meu-tema/
     │   └── hugo.toml
-    └── shared-content/
+    └── conteudo-compartilhado/
         └── filmes/
             ├── _index.md
             ├── filme-1.md
@@ -191,7 +191,7 @@ source = 'content'
 target = 'content'
 
 [[module.mounts]]
-source = '/home/user/shared-content'
+source = '/home/usuario/conteudo-compartilhado'
 target = 'content'
 {{< /code-toggle >}}
 
@@ -207,7 +207,7 @@ Após a montagem, o sistema de arquivos de união tem esta estrutura:
 
 ```text
 home/
-└── user/
+└── usuario/
     └── meu-site/
         ├── content/
         │   ├── livros/
