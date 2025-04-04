@@ -7,45 +7,68 @@
 # The original work was translated from English into Brazilian Portuguese.
 # https://github.com/gohugoio/hugoDocs/blob/master/content/LICENSE.md
 
-title: External learning resources
-linkTitle: External resources
-description: Use these third-party resources to learn Hugo.
+source_url: https://github.com/gohugoio/hugoDocs/blob/master/content/en/getting-started/external-learning-resources/index.md
+revision: b6cae5cbc662fa92a00d123bd758fe1205b8a07e
+status: ready
+
+title: Recursos de aprendizagem externos
+linkTitle: Recursos externos
+description: Use esses recursos de terceiros para aprender sobre o Hugo.
 categories: []
 keywords: []
 weight: 40
 ---
 
-## Books
+## Livros
 
 ### Hugo In Action
 
-Hugo in Action is a step-by-step guide to using Hugo to create static websites. Working with a complete example website and source code samples, you'll learn how to build and host a low-maintenance, high-performance site that will wow your users and stay stable without relying on a third-party server.
+Hugo In Action é um guia passo a passo para usar o Hugo para criar sites
+estáticos.
+Trabalhando com um site de exemplo completo e amostras de código-fonte, você
+aprenderá a construir e hospedar um site de baixa manutenção e alto desempenho
+que impressionará suas pessoas usuárias e permanecerá estável sem depender de um
+servidor de terceiros.
 
-[{{< img src="hugo-in-action.png" alt="Book cover: Hugo in Action" filter="process" filterArgs="resize x350 webp">}}](https://www.manning.com/books/hugo-in-action/)
+[{{< img src="hugo-in-action.png" alt="Capa do livro: Hugo In Action" filter="process" filterArgs="resize x350 webp">}}](https://www.manning.com/books/hugo-in-action/)
 
-Author: Atishay Jain\
-Publisher: [Manning Publications](https://www.manning.com/books/hugo-in-action/)\
-Publication date: March 2022\
-Length: 488 pages\
+Pessoa autora: Atishay Jain\
+Editora: [Manning Publications](https://www.manning.com/books/hugo-in-action/)\
+Data de publicação: Março de 2022\
+Número de páginas: 488 páginas\
 ISBN: 9781617297007
 
 ### Build Websites with Hugo
 
-In this book, you'll use Hugo to build a personal portfolio site that you can use to showcase your skills and thoughts to the world. You'll build the basic skeleton, develop a custom theme, and use content templates to generate new pages quickly. You'll use internal and external data sources to embed content into your site, and render some of your content in JSON and RSS. You'll add a blog section with posts and integrate Disqus with your site, and then make your site searchable.
+Neste livro, você usará o Hugo para construir um site de portfólio pessoal que
+pode ser usado para mostrar suas habilidades e pensamentos ao mundo.
+Você construirá o esqueleto básico, desenvolverá um tema personalizado e usará
+templates de conteúdo para gerar novas páginas rapidamente.
+Você usará fontes de dados internas e externas para incorporar conteúdo ao seu
+site e renderizará parte do seu conteúdo em JSON e RSS.
+Você adicionará uma seção de blog com postagens e integrará o Disqus ao seu site
+e, em seguida, tornará seu site pesquisável.
 
-[{{< img src="build-websites-with-hugo.png" alt="Book cover: Build Websites with Hugo" filter="process" filterArgs="resize x350 webp">}}](https://pragprog.com/titles/bhhugo/build-websites-with-hugo/)
+[{{< img src="build-websites-with-hugo.png" alt="Capa do livro: Build Websites with Hugo" filter="process" filterArgs="resize x350 webp">}}](https://pragprog.com/titles/bhhugo/build-websites-with-hugo/)
 
-Author: Brian P. Hogan\
-Publisher: [Pragmatic Bookshelf](https://pragprog.com/titles/bhhugo/build-websites-with-hugo/)\
-Publication date: May 2020\
-Length: 154 pages\
+Pessoa autora: Brian P. Hogan\
+Editora: [Pragmatic Bookshelf](https://pragprog.com/titles/bhhugo/build-websites-with-hugo/)\
+Data de publicação: Maio de 2020\
+Número de páginas: 154 pages\
 ISBN: 9781680507263
 
-## Videos
+## Vídeos
 
 ### Hugo Beginner Tutorial Series
 
-Welcome to this introduction to Hugo tutorial. The goal of this series is to take you from a lion cub with basic web design knowledge to creating your first Hugo website. In this series you'll learn how to set up a Hugo site, the basics of usingHugo layouts, partials, and templating, set up a blog, and finally use data files. By the end of this series you'll have the foundational knowledge to build your own Hugo sites.
+Te damos boas-vindas a este tutorial de introdução ao Hugo.
+O objetivo desta série é te levar de uma filhota de leão com conhecimento básico
+de web design a uma pessoa capaz de criar seu primeiro site Hugo.
+Nesta série, você aprenderá como configurar um site Hugo, os conceitos básicos
+do uso de layouts, partials e templates do Hugo, configurar um blog e,
+finalmente, usar arquivos de dados.
+Ao final desta série, você terá o conhecimento fundamental para criar seus
+próprios sites Hugo.
 
 1. [Getting set up in Hugo](https://cloudcannon.com/tutorials/hugo-beginner-tutorial/)
 1. [Layouts in Hugo](https://cloudcannon.com/tutorials/hugo-beginner-tutorial/layouts-in-hugo/)
@@ -54,13 +77,15 @@ Welcome to this introduction to Hugo tutorial. The goal of this series is to tak
 1. [Blogging in Hugo](https://cloudcannon.com/tutorials/hugo-beginner-tutorial/blogging-in-hugo/)
 1. [Using Data in Hugo](https://cloudcannon.com/tutorials/hugo-beginner-tutorial/using-data-in-hugo/)
 
-Creator: Mike Neumegen\
-Affiliation: [CloudCannon](https://cloudcannon.com/)\
-Creation date: April 2022
+Pessoa criadora: Mike Neumegen\
+Afiliação: [CloudCannon](https://cloudcannon.com/)\
+Data de criação: Abril de 2022
 
-#### Hugo Static Site Generator
+### Hugo Static Site Generator
 
-This course covers the basics of using the Hugo static site generator. Work your way through the articles and we'll teach you everything you need to know to create a professional and scalable website or blog!
+Este curso abrange os conceitos básicos do uso do gerador de site estático Hugo.
+Leia os artigos e nós lhe ensinaremos tudo o que você precisa saber para criar
+um site ou blog profissional e escalável!
 
 1. [Introduction](https://www.giraffeacademy.com/static-site-generators/hugo/)
 1. [Windows Installation](https://www.giraffeacademy.com/static-site-generators/hugo/installing-hugo-on-windows/)
@@ -86,6 +111,6 @@ This course covers the basics of using the Hugo static site generator. Work your
 1. [Shortcode Templates](https://www.giraffeacademy.com/static-site-generators/hugo/shortcode-templates/)
 1. [Building & Hosting](https://www.giraffeacademy.com/static-site-generators/hugo/building-&-hosting/)
 
-Creator: Mike Dane\
-Affiliation: [Giraffe Academy](https://www.giraffeacademy.com/)\
-Creation date: September 2017
+Pessoa criadora: Mike Dane\
+Afiliação: [Giraffe Academy](https://www.giraffeacademy.com/)\
+Data de criação: Setembro de 2017
