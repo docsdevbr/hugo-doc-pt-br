@@ -21,16 +21,16 @@ weight: 40
 
 ## Livros
 
-### Hugo In Action
+### Hugo in Action
 
-Hugo In Action é um guia passo a passo para usar o Hugo para criar sites
+Hugo in Action é um guia passo a passo para usar o Hugo para criar sites
 estáticos.
 Trabalhando com um site de exemplo completo e amostras de código-fonte, você
 aprenderá a construir e hospedar um site de baixa manutenção e alto desempenho
 que impressionará suas pessoas usuárias e permanecerá estável sem depender de um
 servidor de terceiros.
 
-[{{< img src="hugo-in-action.png" alt="Capa do livro: Hugo In Action" filter="process" filterArgs="resize x350 webp">}}](https://www.manning.com/books/hugo-in-action/)
+[{{< img src="hugo-in-action.png" alt="Capa do livro: Hugo in Action" filter="process" filterArgs="resize x350 webp">}}](https://www.manning.com/books/hugo-in-action/)
 
 Pessoa autora: Atishay Jain\
 Editora: [Manning Publications](https://www.manning.com/books/hugo-in-action/)\
