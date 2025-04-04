@@ -23,10 +23,10 @@ aliases: [/quickstart/,/overview/quickstart/]
 
 Neste tutorial você irá:
 
-1. Criar um _site_
+1. Criar um site
 1. Adicionar conteúdo
-1. Configurar o _site_
-1. Publicar o _site_
+1. Configurar o site
+1. Publicar o site
 
 ## Pré-requisitos
 
@@ -38,7 +38,7 @@ Antes de começar este tutorial, você deve:
 
 Você também deve estar confortável trabalhando na linha de comando.
 
-## Crie um _site_
+## Crie um site
 
 ### Comandos
 
@@ -57,7 +57,7 @@ Verifique se você instalou o Hugo {{% param "minVersion" %}} ou posterior.
 hugo version
 ```
 
-Execute estes comandos para criar um _site_ Hugo com o tema [Ananke].
+Execute estes comandos para criar um site Hugo com o tema [Ananke].
 A próxima seção fornece uma explicação de cada comando.
 
 ```text
@@ -69,7 +69,7 @@ echo "theme = 'ananke'" >> hugo.toml
 hugo server
 ```
 
-Acesse seu _site_ usando a URL exibida em seu terminal.
+Acesse seu site usando a URL exibida em seu terminal.
 Pressione `Ctrl + C` para parar o servidor de desenvolvimento do Hugo.
 
 ### Explicação dos comandos
@@ -99,14 +99,14 @@ um [submódulo Git].
 git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke
 ```
 
-Acrescentar uma linha ao arquivo de configuração do _site_, indicando o tema
+Acrescentar uma linha ao arquivo de configuração do site, indicando o tema
 atual.
 
 ```text
 echo "theme = 'ananke'" >> hugo.toml
 ```
 
-Iniciar o servidor de desenvolvimento do Hugo para visualizar o _site_.
+Iniciar o servidor de desenvolvimento do Hugo para visualizar o site.
 
 ```text
 hugo server
@@ -116,7 +116,7 @@ Pressione `Ctrl + C` para parar o servidor de desenvolvimento do Hugo.
 
 ## Adicione conteúdo
 
-Adicione uma nova página ao seu _site_.
+Adicione uma nova página ao seu site.
 
 ```text
 hugo new content content/posts/meu-primeiro-post.md
@@ -133,11 +133,11 @@ draft = true
 +++
 ```
 
-Observe que o valor `draft` (rascunho) na [_front matter_] é `true`.
-Por padrão, o Hugo não publica conteúdo de rascunho quando você cria o _site_.
+Observe que o valor `draft` (rascunho) na [front matter] é `true`.
+Por padrão, o Hugo não publica conteúdo de rascunho quando você cria o site.
 Saiba mais sobre [conteúdo de rascunho, futuro e expirado].
 
-Adicione um pouco de [Markdown] ao corpo do _post_, mas não altere o valor de
+Adicione um pouco de [Markdown] ao corpo do post, mas não altere o valor de
 `draft`.
 
 ```text
@@ -150,11 +150,11 @@ draft = true
 
 Este é um texto em **negrito** e este é um texto em *ênfase*.
 
-Visite o _site_ do [Hugo](https://gohugo.io)!
+Visite o site do [Hugo](https://gohugo.io)!
 ```
 
 Salve o arquivo e inicie o servidor de desenvolvimento do Hugo para visualizar o
-_site_.
+site.
 Você pode executar qualquer um dos seguintes comandos para incluir conteúdo de
 rascunho.
 
@@ -163,7 +163,7 @@ hugo server --buildDrafts
 hugo server -D
 ```
 
-Acesse seu _site_ usando a URL exibida em seu terminal.
+Acesse seu site usando a URL exibida em seu terminal.
 Mantenha o servidor de desenvolvimento em execução enquanto você continua
 adicionando e alterando conteúdo.
 
@@ -176,9 +176,9 @@ matter_ `draft` como `false`.
 > A organização CommonMark fornece uma [ferramenta útil de teste ao vivo]
 > alimentada pela implementação de referência.
 
-## Configure o _site_
+## Configure o site
 
-Com seu editor, abra o arquivo de [configuração do _site_] (`hugo.toml`) na raiz
+Com seu editor, abra o arquivo de [configuração do site] (`hugo.toml`) na raiz
 do seu projeto.
 
 ```text
@@ -190,11 +190,11 @@ theme = 'ananke'
 
 Faça as seguintes alterações:
 
-1. Defina a `baseURL` (URL base) para seu _site_ de produção.
+1. Defina a `baseURL` (URL base) para seu site de produção.
    Este valor deve começar com o protocolo e terminar com uma barra, conforme
    mostrado acima.
 1. Defina o `languageCode` (código de idioma) para seu idioma e região.
-1. Defina o `title` (título) para seu _site_ de produção.
+1. Defina o `title` (título) para seu site de produção.
 
 Inicie o servidor de desenvolvimento do Hugo para verificar suas alterações,
 lembrando-se de incluir o conteúdo do rascunho.
@@ -206,23 +206,23 @@ hugo server -D
 > [!note]
 > A maioria das pessoas autoras de temas fornece diretrizes e opções de
 > configuração.
-> Certifique-se de visitar o repositório do seu tema ou o _site_ da documentação
+> Certifique-se de visitar o repositório do seu tema ou o site da documentação
 > para obter detalhes.
 >
 > As pessoas da [New Dynamic], autoras do tema Ananke, fornecem [documentação]
 > para configuração e uso.
-> Elas também fornecem um [_site_ de demonstração].
+> Elas também fornecem um [site de demonstração].
 
-## Publique o _site_
+## Publique o site
 
-Nesta etapa, você _publicará_ seu _site_, mas não o _implantará_.
+Nesta etapa, você _publicará_ seu site, mas não o _implantará_.
 
-Quando você _publica_ seu _site_, o Hugo cria todo o _site_ estático no
+Quando você _publica_ seu site, o Hugo cria todo o site estático no
 diretório `public` na raiz do seu projeto.
-Isso inclui os arquivos HTML e _assets_ como imagens, arquivos CSS e arquivos
+Isso inclui os arquivos HTML e assets como imagens, arquivos CSS e arquivos
 JavaScript.
 
-Quando você publica seu _site_, normalmente _não_ deseja incluir
+Quando você publica seu site, normalmente _não_ deseja incluir
 [conteúdo de rascunho, futuro ou expirado].
 O comando é simples.
 
@@ -230,7 +230,7 @@ O comando é simples.
 hugo
 ```
 
-Para aprender como _implantar_ seu _site_, consulte a seção de
+Para aprender como _implantar_ seu site, consulte a seção
 [hospedagem e implantação].
 
 ## Peça ajuda
@@ -253,7 +253,7 @@ e tutoriais em vídeo, consulte a página de
 
 [como solicitar ajuda]: https://discourse.gohugo.io/t/requesting-help/9132
 
-[configuração do _site_]: /configuration/
+[configuração do site]: /configuration/
 
 [conteúdo de rascunho, futuro e expirado]: /getting-started/usage/#conteudo-de-rascunho-futuro-e-expirado
 
@@ -269,7 +269,7 @@ e tutoriais em vídeo, consulte a página de
 
 [fórum]: https://discourse.gohugo.io/
 
-[_front matter_]: /content-management/front-matter/
+[front matter]: /content-management/front-matter/
 
 [hospedagem e implantação]: /host-and-deploy/
 
@@ -283,6 +283,6 @@ e tutoriais em vídeo, consulte a página de
 
 [são aplicações diferentes]: https://learn.microsoft.com/en-us/powershell/scripting/whats-new/differences-from-windows-powershell?view=powershell-7.3
 
-[_site_ de demonstração]: https://gohugo-ananke-theme-demo.netlify.app/
+[site de demonstração]: https://gohugo-ananke-theme-demo.netlify.app/
 
 [submódulo Git]: https://git-scm.com/book/en/v2/Git-Tools-Submodules

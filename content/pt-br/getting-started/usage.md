@@ -203,7 +203,7 @@ aciona uma construção e implantação.
 Os provedores populares incluem [AWS Amplify], [CloudCannon],
 [Cloudflare Pages], [GitHub Pages], [GitLab Pages] e [Netlify].
 
-Saiba mais na seção [hospede e implante].
+Saiba mais na seção [hospedagem e implantação].
 
 [^1]: O repositório Git contém todo o diretório do projeto, normalmente
 excluindo o diretório `public` porque o site é construído _após_ o push.
@@ -224,7 +224,7 @@ excluindo o diretório `public` porque o site é construído _após_ o push.
 
 [GitLab Pages]: https://docs.gitlab.com/ee/user/project/pages/
 
-[hospede e implante]: /host-and-deploy/
+[hospedagem e implantação]: /host-and-deploy/
 
 [`hugo`]: /commands/hugo/
 
