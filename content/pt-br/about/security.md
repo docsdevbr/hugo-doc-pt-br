@@ -7,29 +7,50 @@
 # The original work was translated from English into Brazilian Portuguese.
 # https://github.com/gohugoio/hugoDocs/blob/master/content/LICENSE.md
 
-title: Security model
-linkTitle: Security 
-description: A summary of Hugo's security model.
+source_url: https://github.com/gohugoio/hugoDocs/blob/master/content/en/about/security.md
+revision: b6cae5cbc662fa92a00d123bd758fe1205b8a07e
+status: ready
+
+title: Modelo de segurança
+linkTitle: Segurança
+description: Um resumo do modelo de segurança do Hugo.
 categories: []
 keywords: []
 weight: 30
 aliases: [/about/security-model/]
 ---
 
-## Runtime security
+## Segurança do tempo de execução
 
-Hugo generates static websites, meaning the final output runs directly in the browser and interacts with any integrated APIs. However, during development and site building, the `hugo` executable itself is the runtime environment.
+O Hugo gera sites estáticos, o que significa que a saída final é executada
+diretamente no navegador e interage com quaisquer APIs integradas.
+No entanto, durante o desenvolvimento e a construção do site, o próprio
+executável `hugo` é o ambiente de tempo de execução.
 
-Securing a runtime is a complex task. Hugo addresses this through a robust sandboxing approach and a strict security policy with default protections. Key features include:
+Proteger um tempo de execução é uma tarefa complexa.
+O Hugo aborda isso por meio de uma abordagem de sandbox robusta e uma política
+de segurança rigorosa com proteções padrão.
+Os principais recursos incluem:
 
-- Virtual file system: Hugo employs a virtual file system, limiting file access. Only the main project, not external components, can access files or directories outside the project root.
-- Read-Only access: User-defined components have read-only access to the file system, preventing unintended modifications.
-- Controlled external binaries: While Hugo utilizes external binaries for features like Asciidoctor support, these are strictly predefined with specific flags and are disabled by default. The [security policy] details these limitations.
-- No arbitrary commands: To mitigate risks, Hugo intentionally avoids implementing general functions that would allow users to execute arbitrary operating system commands.
+- Sistema de arquivos virtual: o Hugo emprega um sistema de arquivos virtual,
+  limitando o acesso aos arquivos.
+  Apenas o projeto principal, não componentes externos, pode acessar arquivos ou
+  diretórios fora da raiz do projeto.
+- Acesso somente leitura: componentes definidos pela pessoa usuária têm acesso
+  somente leitura ao sistema de arquivos, evitando modificações não
+  intencionais.
+- Binários externos controlados: embora o Hugo utilize binários externos para
+  recursos como suporte ao Asciidoctor, eles são estritamente predefinidos com
+  flags específicas e são desabilitados por padrão.
+  A [política de segurança] detalha essas limitações.
+- Sem comandos arbitrários: para mitigar riscos, o Hugo evita intencionalmente
+  implementar funções gerais que permitiriam às pessoas usuárias executar
+  comandos arbitrários do sistema operacional.
 
-This combination of sandboxing and strict defaults effectively minimizes potential security vulnerabilities during the Hugo build process.
+Essa combinação de sandbox e padrões rigorosos minimiza efetivamente potenciais
+vulnerabilidades de segurança durante o processo de construção do Hugo.
 
-[security policy]: /configuration/security/
+[política de segurança]: /configuration/security/
 
 ## Dependency security
 
