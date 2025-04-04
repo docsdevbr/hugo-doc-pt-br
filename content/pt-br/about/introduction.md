@@ -13,8 +13,8 @@ status: ready
 
 title: Introdução
 description: |
-Hugo é um gerador de sites estáticos escrito em Go, otimizado para velocidade
-e projetado para flexibilidade.
+  Hugo é um gerador de sites estáticos escrito em Go, otimizado para velocidade
+  e projetado para flexibilidade.
 categories: []
 keywords: []
 weight: 10
