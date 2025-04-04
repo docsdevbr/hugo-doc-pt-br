@@ -28,7 +28,7 @@ Após [instalar] o Hugo, teste sua instalação executando:
 hugo version
 ```
 
-Você deve ter algo como:
+Você deve obter algo como:
 
 ```text
 hugo v0.123.0-3c8a4713908e48e6523f058ca126710397aa4ed5+extended linux/amd64 BuildDate=2024-02-19T16:32:38Z VendorInfo=gohugoio
@@ -58,7 +58,7 @@ hugo
 ```
 
 O comando [`hugo`] constrói seu site, publicando os arquivos no diretório
-público.
+`public`.
 Para publicar seu site em um diretório diferente, use a flag [`--destination`]
 ou defina [`publishDir`] na configuração do seu site.
 
