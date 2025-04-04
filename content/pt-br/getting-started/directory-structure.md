@@ -7,28 +7,34 @@
 # The original work was translated from English into Brazilian Portuguese.
 # https://github.com/gohugoio/hugoDocs/blob/master/content/LICENSE.md
 
-title: Directory structure
-description: An overview of Hugo's directory structure.
+source_url: https://github.com/gohugoio/hugoDocs/blob/master/content/en/getting-started/directory-structure.md
+revision: c540e6d295880311a855308b1e14180cabbcd24a
+status: ready
+
+title: Estrutura de diretório
+description: Uma visão geral da estrutura de diretório do Hugo.
 categories: []
 keywords: []
 weight: 30
 aliases: [/overview/source-directory/]
 ---
 
-Each Hugo project is a directory, with subdirectories that contribute to the content, structure, behavior, and presentation of your site.
+Cada projeto Hugo é um diretório, com subdiretórios que contribuem para o
+conteúdo, estrutura, comportamento e apresentação do seu site.
 
-## Site skeleton
+## Esqueleto do site
 
-Hugo generates a project skeleton when you create a new site. For example, this command:
+O Hugo gera um esqueleto de projeto quando você cria um novo site.
+Por exemplo, este comando:
 
 ```sh
-hugo new site my-site
+hugo new site meu-site
 ```
 
-Creates this directory structure:
+Cria esta estrutura de diretório:
 
 ```txt
-my-site/
+meu-site/
 ├── archetypes/
 │   └── default.md
 ├── assets/
@@ -38,17 +44,18 @@ my-site/
 ├── layouts/
 ├── static/
 ├── themes/
-└── hugo.toml         <-- site configuration
+└── hugo.toml         <-- configuração do site
 ```
 
-Depending on requirements, you may wish to organize your site configuration into subdirectories:
+Dependendo dos requisitos, você pode querer organizar a configuração do seu site
+em subdiretórios:
 
 ```txt
-my-site/
+meu-site/
 ├── archetypes/
 │   └── default.md
 ├── assets/
-├── config/           <-- site configuration
+├── config/           <-- configuração do site
 │   └── _default/
 │       └── hugo.toml
 ├── content/
@@ -59,10 +66,11 @@ my-site/
 └── themes/
 ```
 
-When you build your site, Hugo creates a `public` directory, and typically a `resources` directory as well:
+Quando você cria seu site, o Hugo cria um diretório `public` e, normalmente, um
+diretório `resources` também:
 
 ```txt
-my-site/
+meu-site/
 ├── archetypes/
 │   └── default.md
 ├── assets/
@@ -73,74 +81,109 @@ my-site/
 ├── data/
 ├── i18n/
 ├── layouts/
-├── public/       <-- created when you build your site
-├── resources/    <-- created when you build your site
+├── public/       <-- criado quando você constrói seu site
+├── resources/    <-- criado quando você constrói seu site
 ├── static/
 └── themes/
 ```
 
-## Directories
+## Diretórios
 
-Each of the subdirectories contributes to the content, structure, behavior, or presentation of your site.
+Cada um dos subdiretórios contribui para o conteúdo, estrutura, comportamento ou
+apresentação do seu site.
 
 archetypes
-: The `archetypes` directory contains templates for new content. See&nbsp;[details](/content-management/archetypes/).
+: O diretório `archetypes` contém templates para novos conteúdos.
+Consulte os [detalhes](/content-management/archetypes/).
 
 assets
-: The `assets` directory contains global resources typically passed through an asset pipeline. This includes resources such as images, CSS, Sass, JavaScript, and TypeScript. See&nbsp;[details](/hugo-pipes/introduction/).
+: O diretório `assets` contém recursos globais que normalmente passaram por uma
+esteira de assets.
+Isso inclui recursos como imagens, CSS, Sass, JavaScript e TypeScript.
+Consulte os [detalhes](/hugo-pipes/introduction/).
 
 config
-: The `config` directory contains your site configuration, possibly split into multiple subdirectories and files. For projects with minimal configuration or projects that do not need to behave differently in different environments, a single configuration file named `hugo.toml` in the root of the project is sufficient. See&nbsp;[details](/configuration/introduction/#configuration-directory).
+: O diretório `config` contém a configuração do seu site, possivelmente dividida
+em vários subdiretórios e arquivos.
+Para projetos com configuração mínima ou projetos que não precisam se comportar
+de forma diferente em ambientes diferentes, um único arquivo de configuração
+chamado `hugo.toml` na raiz do projeto é suficiente.
+Consulte os [detalhes](/configuration/introduction/#configuration-directory).
 
 content
-: The `content` directory contains the markup files (typically Markdown) and page resources that comprise the content of your site. See&nbsp;[details](/content-management/organization/).
+: O diretório `content` contém os arquivos de marcação (normalmente Markdown) e
+recursos de página que compõem o conteúdo do seu site.
+Consulte os [detalhes](/content-management/organization/).
 
 data
-: The `data` directory contains data files (JSON, TOML, YAML, or XML) that augment content, configuration, localization, and navigation. See&nbsp;[details](/content-management/data-sources/).
+: O diretório `data` contém arquivos de dados (JSON, TOML, YAML ou XML) que
+incrementam o conteúdo, a configuração, a localização e a navegação.
+Consulte os [detalhes](/content-management/data-sources/).
 
 i18n
-: The `i18n` directory contains translation tables for multilingual sites. See&nbsp;[details](/content-management/multilingual/).
+: O diretório `i18n` contém tabelas de tradução para sites multilíngues.
+Consulte os [detalhes](/content-management/multilingual/).
 
 layouts
-: The `layouts` directory contains templates to transform content, data, and resources into a complete website. See&nbsp;[details](/templates/).
+: O diretório `layouts` contém templates para transformar conteúdo, dados e
+recursos em um site completo.
+Consulte os [detalhes](/templates/).
 
 public
-: The `public` directory contains the published website, generated when you run the `hugo` or `hugo server` commands. Hugo recreates this directory and its content as needed. See&nbsp;[details](/getting-started/usage/#construa-seu-site).
+: O diretório `public` contém o site publicado, gerado quando você executa os
+comandos `hugo` ou `hugo server`.
+O Hugo recria esse diretório e seu conteúdo conforme necessário.
+Consulte os [detalhes](/getting-started/usage/#construa-seu-site).
 
 resources
-: The `resources` directory contains cached output from Hugo's asset pipelines, generated when you run the `hugo` or `hugo server` commands. By default this cache directory includes CSS and images. Hugo recreates this directory and its content as needed.
+: O diretório `resources` contém a saída em cache das esteiras de assets do
+Hugo, gerada quando você executa os comandos `hugo` ou `hugo server`.
+Por padrão, esse diretório de cache inclui CSS e imagens.
+O Hugo recria esse diretório e seu conteúdo conforme necessário.
 
 static
-: The `static` directory contains files that will be copied to the `public` directory when you build your site. For example: `favicon.ico`, `robots.txt`, and files that verify site ownership. Before the introduction of [page bundles](g) and [asset pipelines](/hugo-pipes/introduction/), the `static` directory was also used for images, CSS, and JavaScript.
+: O diretório `static` contém arquivos que serão copiados para o diretório
+`public` quando você criar seu site.
+Por exemplo: `favicon.ico`, `robots.txt` e arquivos que verificam a propriedade
+do site.
+Antes da introdução de [page bundles](g) e
+[esteiras de assets](/hugo-pipes/introduction/), o diretório `static` também era
+usado para imagens, CSS e JavaScript.
 
 themes
-: The `themes` directory contains one or more [themes](g), each in its own subdirectory.
+: O diretório `themes` contém um ou mais [themes](g), cada um em seu próprio
+subdiretório.
 
-## Union file system
+## Sistema de arquivos de união
 
-Hugo creates a union file system, allowing you to mount two or more directories to the same location. For example, let's say your home directory contains a Hugo project in one directory, and shared content in another:
+O Hugo cria um sistema de arquivos de união, permitindo que você monte dois ou
+mais diretórios no mesmo local.
+Por exemplo, digamos que seu diretório home contém um projeto Hugo em um
+diretório e conteúdo compartilhado em outro:
 
 ```text
 home/
 └── user/
-    ├── my-site/            
+    ├── meu-site/
     │   ├── content/
-    │   │   ├── books/
+    │   │   ├── livros/
     │   │   │   ├── _index.md
-    │   │   │   ├── book-1.md
-    │   │   │   └── book-2.md
+    │   │   │   ├── livro-1.md
+    │   │   │   └── livro-2.md
     │   │   └── _index.md
     │   ├── themes/
-    │   │   └── my-theme/
+    │   │   └── meu-tema/
     │   └── hugo.toml
-    └── shared-content/     
-        └── films/
+    └── shared-content/
+        └── filmes/
             ├── _index.md
-            ├── film-1.md
-            └── film-2.md
+            ├── filme-1.md
+            └── filme-2.md
 ```
 
-You can include the shared content when you build your site using mounts. In your site configuration:
+Você pode incluir o conteúdo compartilhado ao construir seu site usando
+montagens.
+Na configuração do seu site:
 
 {{< code-toggle file=hugo >}}
 [[module.mounts]]
@@ -153,50 +196,61 @@ target = 'content'
 {{< /code-toggle >}}
 
 > [!note]
-> When you overlay one directory on top of another, you must mount both directories.
+> Quando você sobrepõe um diretório sobre outro, você deve montar ambos os
+> diretórios.
 >
-> Hugo does not follow symbolic links. If you need the functionality provided by symbolic links, use Hugo's union file system instead.
+> O Hugo não segue links simbólicos.
+> Se você precisa da funcionalidade fornecida pelos links simbólicos, use o
+> sistema de arquivos de união do Hugo.
 
-After mounting, the union file system has this structure:
+Após a montagem, o sistema de arquivos de união tem esta estrutura:
 
 ```text
 home/
 └── user/
-    └── my-site/
+    └── meu-site/
         ├── content/
-        │   ├── books/
+        │   ├── livros/
         │   │   ├── _index.md
-        │   │   ├── book-1.md
-        │   │   └── book-2.md
-        │   ├── films/
+        │   │   ├── livro-1.md
+        │   │   └── livro-2.md
+        │   ├── filmes/
         │   │   ├── _index.md
-        │   │   ├── film-1.md
-        │   │   └── film-2.md
+        │   │   ├── filme-1.md
+        │   │   └── filme-2.md
         │   └── _index.md
         ├── themes/
-        │   └── my-theme/
+        │   └── meu-tema/
         └── hugo.toml
 ```
 
 > [!note]
-> When two or more files have the same path, the order of precedence follows the order of the mounts. For example, if the shared content directory contains `books/book-1.md`, it will be ignored because the project's `content` directory was mounted first.
+> Quando dois ou mais arquivos têm o mesmo caminho, a ordem de precedência segue
+> a ordem das montagens.
+> Por exemplo, se o diretório de conteúdo compartilhado contiver
+> `livros/livro-1.md`, ele será ignorado porque o diretório de conteúdo do
+> projeto foi montado primeiro.
 
-You can mount directories to `archetypes`, `assets`, `content`, `data`, `i18n`, `layouts`, and `static`. See&nbsp;[details](/configuration/module/#mounts).
+Você pode montar diretórios para `archetypes`, `assets`, `content`, `data`,
+`i18n`, `layouts` e `static`.
+Consulte os [detalhes](/configuration/module/#mounts).
 
-You can also mount directories from Git repositories using Hugo Modules. See&nbsp;[details](/hugo-modules/).
+Você também pode montar diretórios de repositórios Git usando Módulos Hugo.
+Consulte os [detalhes](/hugo-modules/).
 
-## Theme skeleton
+## Esqueleto do tema
 
-Hugo generates a functional theme skeleton when you create a new theme. For example, this command:
+O Hugo gera um esqueleto de tema funcional quando você cria um novo tema.
+Por exemplo, este comando:
 
 ```text
-hugo new theme my-theme
+hugo new theme meu-tema
 ```
 
-Creates this directory structure (subdirectories not shown):
+Cria esta estrutura de diretório (subdiretórios não mostrados):
 
 ```text
-my-theme/
+meu-tema/
 ├── archetypes/
 ├── assets/
 ├── content/
@@ -210,6 +264,12 @@ my-theme/
 └── theme.toml
 ```
 
-Using the union file system described above, Hugo mounts each of these directories to the corresponding location in the project. When two files have the same path, the file in the project directory takes precedence. This allows you, for example, to override a theme's template by placing a copy in the same location within the project directory.
+Usando o sistema de arquivos de união descrito acima, o Hugo monta cada um
+desses diretórios no local correspondente no projeto.
+Quando dois arquivos têm o mesmo caminho, o arquivo no diretório do projeto tem
+precedência.
+Isso permite que você, por exemplo, substitua o template de um tema colocando
+uma cópia no mesmo local dentro do diretório do projeto.
 
-If you are simultaneously using components from two or more themes or modules, and there's a path collision, the first mount takes precedence.
+Se você estiver usando simultaneamente componentes de dois ou mais temas ou
+módulos, e houver uma colisão de caminho, a primeira montagem tem precedência.
