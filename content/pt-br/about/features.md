@@ -7,8 +7,15 @@
 # The original work was translated from English into Brazilian Portuguese.
 # https://github.com/gohugoio/hugoDocs/blob/master/content/LICENSE.md
 
-title: Features
-description: Hugo's rich and powerful feature set provides the framework and tools to create static sites that build in seconds, often less.
+source_url: https://github.com/gohugoio/hugoDocs/blob/master/content/en/about/features.md
+revision: c540e6d295880311a855308b1e14180cabbcd24a
+status: ready
+
+title: Recursos
+description: |
+  O rico e poderoso conjunto de recursos do Hugo fornece o framework e as
+  ferramentas para criar sites estáticos que são construídos em segundos,
+  geralmente menos.
 categories: []
 keywords: []
 weight: 20
@@ -16,129 +23,223 @@ weight: 20
 
 ## Framework
 
-[Multiplatform]
-: Install Hugo's single executable on Linux, macOS, Windows, and more.
+[Multiplataforma]
+: Instale o único executável do Hugo no Linux, macOS, Windows e muito mais.
 
-[Multilingual]
-: Localize your project for each language and region, including translations, images, dates, currencies, numbers, percentages, and collation sequence. Hugo's multilingual framework supports single-host and multihost configurations.
+[Multilíngue]
+: Localize seu projeto para cada idioma e região, incluindo traduções, imagens,
+datas, moedas, números, porcentagens e sequência de codificação de caracteres.
+O framework multilíngue do Hugo oferece suporte a configurações de host único e
+múltiplos hosts.
 
-[Output formats]
-: Render each page of your site to one or more output formats, with granular control by page kind, section, and path. While HTML is the default output format, you can add JSON, RSS, CSV, and more. For example, create a REST API to access content.
+[Formatos de saída]
+: Renderize cada página do seu site para um ou mais formatos de saída, com
+controle granular por tipo de página, seção e caminho.
+Embora HTML seja o formato de saída padrão, você pode adicionar JSON, RSS, CSV e
+muito mais.
+Por exemplo, você pode criar uma API REST para acessar o conteúdo.
 
 [Templates]
-: Create templates using variables, functions, and methods to transform your content, resources, and data into a published page. While HTML templates are the most common, you can create templates for any output format.
+: Crie templates usando variáveis, funções e métodos para transformar seu
+conteúdo, recursos e dados em uma página publicada.
+Embora os templates HTML sejam os mais comuns, você pode criar templates para
+qualquer formato de saída.
 
-[Themes]
-: Reduce development time and cost by using one of the hundreds of themes contributed by the Hugo community. Themes are available for corporate sites, documentation projects, image portfolios, landing pages, personal and professional blogs, resumes, CVs, and more.
+[Temas]
+: Reduza o tempo e o custo de desenvolvimento usando um das centenas de temas
+contribuídos pela comunidade Hugo.
+Há temas disponíveis para sites corporativos, projetos de documentação,
+portfólios de imagens, landing pages, blogs pessoais e profissionais,
+currículos, CVs e muito mais.
 
-[Modules]
-: Reduce development time and cost by creating or importing packaged combinations of archetypes, assets, content, data, templates, translation tables, static files, or configuration settings. A module may serve as the basis for a new site, or to augment an existing site.
+[Módulos]
+: Reduza o tempo e o custo de desenvolvimento criando ou importando combinações
+empacotadas de archetypes, assets, conteúdo, dados, templates, tabelas de
+tradução, arquivos estáticos ou definições de configuração.
+Um módulo pode servir como base para um novo site ou para incrementar um site
+existente.
 
-[Privacy]
-: Configure your site to help comply with regional privacy regulations.
+[Privacidade]
+: Configure seu site para ajudar a cumprir com os regulamentos regionais de
+privacidade.
 
-[Security]
-: Hugo's security model is based on the premise that template and configuration authors are trusted, but content authors are not. This model enables generation of HTML output safe against code injection. Other protections prevent "shelling out" to arbitrary applications, limit access to specific environment variables, prevent connections to arbitrary remote data sources, and more.
+[Segurança]
+: O modelo de segurança do Hugo é baseado na premissa de que as pessoas autoras
+de templates e configurações são confiáveis, mas as pessoas autoras de conteúdo
+não.
+Este modelo permite a geração de saída HTML segura contra injeção de código.
+Outras proteções impedem a conexão de volta à máquina de uma pessoa invasora
+para acessar aplicações arbitrárias, limitam o acesso a variáveis de ambiente
+específicas, impedem conexões com fontes de dados remotas arbitrárias e muito
+mais.
 
-## Content authoring
+## Criação de conteúdo
 
-[Content formats]
-: Create your content using Markdown, HTML, AsciiDoc, Emacs Org Mode, Pandoc, or reStructuredText. Markdown is the default content format, conforming to the [CommonMark] and [GitHub Flavored Markdown] specifications.
+[Formatos de conteúdo]
+: Crie seu conteúdo usando Markdown, HTML, AsciiDoc, Emacs Org Mode, Pandoc ou
+reStructuredText.
+Markdown é o formato de conteúdo padrão, em conformidade com as especificações
+[CommonMark] e [GitHub Flavored Markdown].
 
-[Markdown attributes]
-: Apply HTML attributes such as `class` and `id` to Markdown images and block elements including blockquotes, fenced code blocks, headings, horizontal rules, lists, paragraphs, and tables.
+[Atributos Markdown]
+: Aplique atributos HTML como `class` e `id` a imagens Markdown e elementos de
+bloco, incluindo citações de bloco, blocos de código isolados, títulos, réguas
+horizontais, listas, parágrafos e tabelas.
 
-[Markdown extensions]
-: Leverage the embedded Markdown extensions to create tables, definition lists, footnotes, task lists, inserted text, mark text, subscripts, superscripts, and more.
+[Extensões Markdown]
+: Aproveite as extensões Markdown incorporadas para criar tabelas, listas de
+definições, notas de rodapé, listas de tarefas, texto inserido, texto destacado,
+subscritos, sobrescritos e muito mais.
 
-[Markdown render hooks]
-: Override the conversion of Markdown to HTML when rendering blockquotes, fenced code blocks, headings, images, links, and tables. For example, render every standalone image as an HTML `figure` element.
+[Hooks de renderização Markdown]
+: Substitua a conversão de Markdown para HTML ao renderizar citações de bloco,
+blocos de código isolados, títulos, imagens, links e tabelas.
+Por exemplo, renderize cada imagem autônoma como um elemento `figure` HTML.
 
-[Diagrams]
-: Use fenced code blocks and Markdown render hooks to include diagrams in your content.
+[Diagramas]
+: Use blocos de código isolados e hooks de renderização Markdown para incluir
+diagramas em seu conteúdo.
 
-[Mathematics]
-: Include mathematical equations and expressions in Markdown using LaTeX markup.
+[Matemática]
+: Inclua equações e expressões matemáticas em Markdown usando marcação LaTeX.
 
-[Syntax highlighting]
-: Syntactically highlight code examples using Hugo's embedded syntax highlighter, enabled by default for fenced code blocks in Markdown. The syntax highlighter supports hundreds of code languages and dozens of styles.
+[Realce de sintaxe]
+: Realce sintaticamente exemplos de código usando o realçador de sintaxe
+incorporado do Hugo, habilitado por padrão para blocos de código isolados no
+Markdown.
+O realçador de sintaxe suporta centenas de linguagens de código e dezenas de
+estilos.
 
 [Shortcodes]
-: Use Hugo's embedded shortcodes, or create your own, to insert complex content. For example, use shortcodes to include `audio` and `video` elements, render tables from local or remote data sources, insert snippets from other pages, and more.
+: Use os shortcodes incorporados do Hugo ou crie os seus próprios para
+inserir conteúdo complexo.
+Por exemplo, use shortcodes para incluir elementos de `audio` e `video`,
+renderizar tabelas de fontes de dados locais ou remotas, inserir trechos de
+código de outras páginas e muito mais.
 
-## Content management
+## Gerenciamento de conteúdo
 
-[Content adapters]
-: Create content adapters to dynamically add content when building your site. For example, use a content adapter to create pages from a remote data source such as JSON, TOML, YAML, or XML.
+[Adaptadores de conteúdo]
+: Crie adaptadores de conteúdo para adicionar conteúdo dinamicamente ao criar
+seu site.
+Por exemplo, use um adaptador de conteúdo para criar páginas a partir de uma
+fonte de dados remota, como JSON, TOML, YAML ou XML.
 
-[Taxonomies]
-: Classify content to establish simple or complex logical relationships between pages. For example, create an authors taxonomy, and assign one or more authors to each page. Among other uses, the taxonomy system provides an inverted, weighted index to render a list of related pages, ordered by relevance.
+[Taxonomias]
+: Classifique o conteúdo para estabelecer relacionamentos lógicos simples ou
+complexos entre as páginas.
+Por exemplo, crie uma taxonomia de pessoas autoras e atribua um ou mais pessoas
+autoras a cada página.
+Entre outros usos, o sistema de taxonomia fornece um índice ponderado invertido
+para renderizar uma lista de páginas relacionadas, ordenadas por relevância.
 
-[Data]
-: Augment your content using local or remote data sources including CSV, JSON, TOML, YAML, and XML. For example, create a shortcode to render an HTML table from a remote CSV file.
+[Dados]
+: Aumente seu conteúdo usando fontes de dados locais ou remotas, incluindo CSV,
+JSON, TOML, YAML e XML.
+Por exemplo, crie um shortcode para renderizar uma tabela HTML a partir de um
+arquivo CSV remoto.
 
 [Menus]
-: Provide rapid access to content via Hugo's menu system, configured automatically, globally, or on a page-by-page basis. The menu system is a key component of Hugo's multilingual architecture.
+: Forneça acesso rápido ao conteúdo por meio do sistema de menu do Hugo,
+configurado automaticamente, globalmente ou página por página.
+O sistema de menu é um componente essencial da arquitetura multilíngue do Hugo.
 
-[URL management]
-: Serve any page from any path via global configuration or on a page-by-page basis.
+[Gerenciamento de URLs]
+: Sirva qualquer página a partir de qualquer caminho por meio de configuração
+global ou página por página.
 
-## Asset pipelines
+## Esteiras de assets
 
-[Image processing]
-: Convert, resize, crop, rotate, adjust colors, apply filters, overlay text and images, and extract EXIF data.
+[Processamento de imagem]
+: Converta, redimensione, corte, gire, ajuste cores, aplique filtros, sobreponha
+texto e imagens e extraia dados EXIF.
 
-[JavaScript bundling]
-: Transpile TypeScript and JSX to JavaScript, bundle, tree shake, minify, create source maps, and perform SRI hashing.
+[Empacotamento de JavaScript]
+: Transpile TypeScript e JSX para JavaScript, agrupe, remova código morto,
+minimize, crie mapas de origem e execute hashes SRI.
 
-[Sass processing]
-: Transpile Sass to CSS, bundle, tree shake, minify, create source maps, perform SRI hashing, and integrate with PostCSS.
+[Processamento Sass]
+: Transpile Sass para CSS, agrupe, remova código morto, minimize, crie mapas de
+origem, execute hashes SRI e integre com PostCSS.
 
-[Tailwind CSS processing]
-: Compile Tailwind CSS utility classes into standard CSS, bundle, tree shake, optimize, minify, perform SRI hashing, and integrate with PostCSS.
+[Processamento CSS do Tailwind]
+: Compile classes utilitárias CSS do Tailwind em CSS padrão, agrupe, remova
+código morto, otimize, minimize, execute hashes SRI e integre com PostCSS.
 
-## Performance
+## Desempenho
 
-[Caching]
-: Reduce build time and cost by rendering a partial template once then cache the result, either globally or within a given context. For example, cache the result of an asset pipeline to prevent reprocessing on every rendered page.
+[Cache]
+: Reduza o tempo e o custo de construção renderizando um template parcial uma
+vez e, em seguida, armazene o resultado em cache, globalmente ou dentro de um
+determinado contexto.
+Por exemplo, armazene em cache o resultado de uma esteira de assets para evitar
+o reprocessamento em cada página renderizada.
 
-[Segmentation]
-: Reduce build time and cost by partitioning your sites into segments. For example, render the home page and the "news section" every hour, and render the entire site once a week.
+[Segmentação]
+: Reduza o tempo e o custo de construção particionando seus sites em segmentos.
+Por exemplo, renderize a página inicial e a "seção de notícias" a cada hora e
+renderize o site inteiro uma vez por semana.
 
-[Minification]
-: Minify HTML, CSS, and JavaScript to reduce file size, bandwidth consumption, and loading times.
+[Minificação]
+: Minimize HTML, CSS e JavaScript para reduzir o tamanho dos arquivos, o consumo
+de largura de banda e o tempo de carregamento.
 
-[Multilingual]: /content-management/multilingual/
-[Multiplatform]: /installation/
-[Output formats]: /configuration/output-formats/
-[Templates]: /templates/introduction/
-[Themes]: https://themes.gohugo.io/
-[Modules]: /hugo-modules/
-[Privacy]: /configuration/privacy/
-[Security]: /about/security/
+[Adaptadores de conteúdo]: /content-management/content-adapters/
 
-[Content formats]: /content-management/formats/
+[Atributos Markdown]: /content-management/markdown-attributes/
+
+[Cache]: /functions/partials/includecached/
+
 [CommonMark]: https://spec.commonmark.org/current/
+
+[Dados]: /content-management/data-sources/
+
+[Diagramas]: /content-management/diagrams/
+
+[Empacotamento de JavaScript]: /functions/js/build/
+
+[Extensões Markdown]: /configuration/markup/#extensions
+
+[Formatos de conteúdo]: /content-management/formats/
+
+[Formatos de saída]: /configuration/output-formats/
+
+[Gerenciamento de URLs]: /content-management/urls/
+
 [GitHub Flavored Markdown]: https://github.github.com/gfm/
-[Markdown attributes]: /content-management/markdown-attributes/
-[Markdown extensions]: /configuration/markup/#extensions
-[Markdown render hooks]: /render-hooks/introduction/
-[Diagrams]: /content-management/diagrams/
-[Mathematics]: /content-management/mathematics/
-[Syntax highlighting]: /content-management/syntax-highlighting/
+
+[Hooks de renderização Markdown]: /render-hooks/introduction/
+
+[Matemática]: /content-management/mathematics/
+
+[Menus]: /content-management/menus/
+
+[Minificação]: /configuration/minify/
+
+[Módulos]: /hugo-modules/
+
+[Multilíngue]: /content-management/multilingual/
+
+[Multiplataforma]: /installation/
+
+[Privacidade]: /configuration/privacy/
+
+[Processamento CSS do Tailwind]: /functions/css/tailwindcss/
+
+[Processamento de imagem]: /content-management/image-processing/
+
+[Processamento Sass]: /functions/css/Sass/
+
+[Realce de sintaxe]: /content-management/syntax-highlighting/
+
+[Segmentação]: /configuration/segments/
+
+[Segurança]: /about/security/
+
 [Shortcodes]: /content-management/shortcodes/
 
-[Content adapters]: /content-management/content-adapters/
-[Taxonomies]: /content-management/taxonomies/
-[Data]: /content-management/data-sources/
-[Menus]: /content-management/menus/
-[URL management]: /content-management/urls/
+[Taxonomias]: /content-management/taxonomies/
 
-[Image processing]: /content-management/image-processing/
-[JavaScript bundling]: /functions/js/build/
-[Sass processing]: /functions/css/Sass/
-[Tailwind CSS processing]: /functions/css/tailwindcss/
+[Temas]: https://themes.gohugo.io/
 
-[Caching]: /functions/partials/includecached/
-[Segmentation]: /configuration/segments/
-[Minification]: /configuration/minify/
+[Templates]: /templates/introduction/
