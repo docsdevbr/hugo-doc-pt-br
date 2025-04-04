@@ -111,11 +111,11 @@ O realçador de sintaxe suporta centenas de linguagens de código e dezenas de
 estilos.
 
 [Shortcodes]
-: Use os shortcodes incorporados do Hugo ou crie os seus próprios para
-inserir conteúdo complexo.
-Por exemplo, use shortcodes para incluir elementos de `audio` e `video`,
-renderizar tabelas de fontes de dados locais ou remotas, inserir trechos de
-código de outras páginas e muito mais.
+: Use os shortcodes incorporados do Hugo ou crie os seus para inserir conteúdo
+complexo.
+Por exemplo, use shortcodes para incluir elementos `audio` e `video`, renderizar
+tabelas a partir de fontes de dados locais ou remotas, inserir trechos de código
+de outras páginas e muito mais.
 
 ## Gerenciamento de conteúdo
 
@@ -128,14 +128,14 @@ fonte de dados remota, como JSON, TOML, YAML ou XML.
 [Taxonomias]
 : Classifique o conteúdo para estabelecer relacionamentos lógicos simples ou
 complexos entre as páginas.
-Por exemplo, crie uma taxonomia de pessoas autoras e atribua um ou mais pessoas
+Por exemplo, crie uma taxonomia de pessoas autoras e atribua uma ou mais pessoas
 autoras a cada página.
 Entre outros usos, o sistema de taxonomia fornece um índice ponderado invertido
 para renderizar uma lista de páginas relacionadas, ordenadas por relevância.
 
 [Dados]
-: Aumente seu conteúdo usando fontes de dados locais ou remotas, incluindo CSV,
-JSON, TOML, YAML e XML.
+: Incremente seu conteúdo usando fontes de dados locais ou remotas, incluindo
+CSV, JSON, TOML, YAML e XML.
 Por exemplo, crie um shortcode para renderizar uma tabela HTML a partir de um
 arquivo CSV remoto.
 
@@ -154,15 +154,15 @@ global ou página por página.
 : Converta, redimensione, corte, gire, ajuste cores, aplique filtros, sobreponha
 texto e imagens e extraia dados EXIF.
 
-[Empacotamento de JavaScript]
+[Agrupamento de JavaScript]
 : Transpile TypeScript e JSX para JavaScript, agrupe, remova código morto,
 minimize, crie mapas de origem e execute hashes SRI.
 
-[Processamento Sass]
+[Processamento de Sass]
 : Transpile Sass para CSS, agrupe, remova código morto, minimize, crie mapas de
 origem, execute hashes SRI e integre com PostCSS.
 
-[Processamento CSS do Tailwind]
+[Processamento de CSS do Tailwind]
 : Compile classes utilitárias CSS do Tailwind em CSS padrão, agrupe, remova
 código morto, otimize, minimize, execute hashes SRI e integre com PostCSS.
 
