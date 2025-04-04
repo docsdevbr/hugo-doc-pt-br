@@ -7,9 +7,15 @@
 # The original work was translated from English into Brazilian Portuguese.
 # https://github.com/gohugoio/hugoDocs/blob/master/content/LICENSE.md
 
-title: About Hugo
-linkTitle: About
-description: Learn about Hugo and its features, privacy protections, and security model.
+source_url: https://github.com/gohugoio/hugoDocs/blob/master/content/en/about/_index.md
+revision: b6cae5cbc662fa92a00d123bd758fe1205b8a07e
+status: ready
+
+title: Sobre o Hugo
+linkTitle: Sobre
+description: |
+  Saiba mais sobre o Hugo e seus recursos, proteções de privacidade e modelo de
+  segurança.
 categories: []
 keywords: []
 weight: 10
