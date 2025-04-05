@@ -52,36 +52,87 @@ vulnerabilidades de segurança durante o processo de construção do Hugo.
 
 [política de segurança]: /configuration/security/
 
-## Dependency security
+## Segurança de dependência
 
-Hugo utilizes [Go Modules] to manage its dependencies, compiling as a static binary. Go Modules create a `go.sum` file, a critical security feature. This file acts as a database, storing the expected cryptographic checksums of all dependencies, including those required indirectly (transitive dependencies).
+O Hugo utiliza [Módulos Go] para gerenciar suas dependências, compilando como um
+binário estático.
+Os [Módulos Go] criam um arquivo `go.sum`, um recurso de segurança crítico.
+Este arquivo atua como um banco de dados, armazenando os checksums
+criptográficos esperadas de todas as dependências, incluindo aquelas necessárias
+indiretamente (dependências transitivas).
 
-[Hugo Modules], which extend Go Modules' functionality, also produce a `go.sum` file. To ensure dependency integrity, commit this `go.sum` file to your version control. If Hugo detects a checksum mismatch during the build process, it will fail, indicating a possible attempt to [tamper with your project's dependencies].
+Os [Módulos Hugo], que estendem a funcionalidade dos Módulos Go, também produzem
+um arquivo `go.sum`.
+Para garantir a integridade da dependência, envie este arquivo `go.sum` para seu
+controle de versão.
+Se o Hugo detectar uma incompatibilidade de checksum durante o processo de
+construção, ele falhará, indicando uma possível tentativa de
+[adulterar as dependências do seu projeto].
 
-[Go Modules]: https://go.dev/wiki/Modules#modules
-[Hugo Modules]: /hugo-modules/
-[tamper with your project's dependencies]: https://julienrenaux.fr/2019/12/20/github-actions-security-risk/
+[adulterar as dependências do seu projeto]: https://julienrenaux.fr/2019/12/20/github-actions-security-risk/
 
-## Web application security
+[Módulos Go]: https://go.dev/wiki/Modules#modules
 
-Hugo's security philosophy is rooted in established security standards, primarily aligning with the threats defined by [OWASP]. For HTML output, Hugo operates under a clear trust model. This model assumes that template and configuration authors, the developers, are trustworthy. However, the data supplied to these templates is inherently considered untrusted. This distinction is crucial for understanding how Hugo handles potential security risks.
+[Módulos Hugo]: /hugo-modules/
+
+## Segurança de aplicações web
+
+A filosofia de segurança do Hugo está enraizada em padrões de segurança
+estabelecidos, alinhando-se principalmente com as ameaças definidas pelo
+[OWASP].
+Para saída HTML, o Hugo opera sob um modelo de confiança claro.
+Este modelo pressupõe que as pessoas autoras de templates e configurações, as
+pessoas desenvolvedoras, são confiáveis.
+No entanto, os dados fornecidos a esses templates são inerentemente considerados
+não confiáveis.
+Essa distinção é crucial para entender como o Hugo lida com potenciais riscos de
+segurança.
 
 [OWASP]: https://en.wikipedia.org/wiki/OWASP
 
-To prevent unintended escaping of data that developers know is safe, Hugo provides  [`safe`] functions, such as [`safeHTML`]. These functions allow developers to explicitly mark data as trusted, bypassing the default escaping mechanisms. This is essential for scenarios where data is generated or sourced from reliable sources. However, an exception exists: enabling [inline shortcodes]. By activating this feature, you are implicitly trusting the logic within the shortcodes and the data contained within your content files.
+Para evitar o escape não intencional de dados que as pessoas desenvolvedoras
+sabem que são seguros, o Hugo fornece funções [`safe`], como [`safeHTML`].
+Essas funções permitem que as pessoas desenvolvedoras marquem explicitamente os
+dados como confiáveis, ignorando os mecanismos de escape padrão.
+Isso é essencial para cenários em que os dados são gerados ou obtidos de fontes
+confiáveis.
+No entanto, existe uma exceção: habilitar [shortcodes em linha].
+Ao ativar esse recurso, você está confiando implicitamente na lógica dentro dos
+shortcodes e nos dados contidos em seus arquivos de conteúdo.
 
 [`safeHTML`]: /functions/safe/html/
-[inline shortcodes]: /content-management/shortcodes/#inline
 
-It's vital to remember that Hugo is a static site generator. This architectural choice significantly reduces the attack surface by eliminating the complexities and vulnerabilities associated with dynamic user input. Unlike dynamic websites, Hugo generates static HTML files, minimizing the risk of real-time attacks. Regarding content, Hugo's default Markdown renderer is [configured to sanitize] potentially unsafe content. This default behavior ensures that potentially malicious code or scripts are removed or escaped. However, this setting can be reconfigured if you have a high degree of confidence in the safety of your content sources.
+[shortcodes em linha]: /content-management/shortcodes/#inline
 
-[configured to sanitize]: /configuration/markup/#rendererunsafe
+É vital lembrar que o Hugo é um gerador de site estático.
+Essa escolha arquitetônica reduz significativamente a superfície de ataque,
+eliminando as complexidades e vulnerabilidades associadas à entrada dinâmica da
+pessoa usuária.
+Ao contrário de sites dinâmicos, o Hugo gera arquivos HTML estáticos,
+minimizando o risco de ataques em tempo real.
+Em relação ao conteúdo, o renderizador Markdown padrão do Hugo é
+[configurado para sanitizar] conteúdo potencialmente inseguro.
+Esse comportamento padrão garante que códigos ou scripts potencialmente
+maliciosos sejam removidos ou escapados.
+No entanto, essa configuração pode ser reconfigurada se você tiver um alto grau
+de confiança na segurança de suas fontes de conteúdo.
 
-In essence, Hugo prioritizes secure output by establishing a clear trust boundary between developers and data. By default, it errs on the side of caution, sanitizing potentially unsafe content and escaping data. Developers have the flexibility to adjust these defaults through [`safe`] functions and [configuration options], but they must do so with a clear understanding of the security implications. Hugo's static site generation model further strengthens its security posture by minimizing dynamic vulnerabilities.
+[configurado para sanitizar]: /configuration/markup/#rendererunsafe
+
+Em essência, o Hugo prioriza a saída segura estabelecendo um limite de confiança
+claro entre pessoas desenvolvedoras e dados.
+Por padrão, ele erra por excesso de cautela, sanitizando conteúdo potencialmente
+inseguro e escapando dados.
+As pessoas desenvolvedoras têm a flexibilidade de ajustar esses padrões por meio
+de funções [`safe`] e [opções de configuração], mas devem fazer isso com uma
+compreensão clara das implicações de segurança.
+O modelo de geração de site estático do Hugo fortalece ainda mais sua postura de
+segurança minimizando vulnerabilidades dinâmicas.
 
 [`safe`]: /functions/safe
-[configuration options]: /configuration/security
 
-## Configuration
+[opções de configuração]: /configuration/security
 
-See [configure security](/configuration/security/).
+## Configuração
+
+Consulte [Configurar a segurança](/configuration/security/).
