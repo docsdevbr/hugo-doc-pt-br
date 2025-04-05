@@ -7,10 +7,15 @@
 # The original work was translated from English into Brazilian Portuguese.
 # https://github.com/gohugoio/hugoDocs/blob/master/content/LICENSE.md
 
+source_url: https://github.com/gohugoio/hugoDocs/blob/master/content/en/_common/filter-sort-group.md
+revision: c540e6d295880311a855308b1e14180cabbcd24a
+status: ready
+
 _comment: Do not remove front matter.
 ---
 
 > [!note]
-> The [page collections quick reference guide] describes methods and functions to filter, sort, and group page collections.
+> O [guia de referência rápida de coleções de páginas] descreve métodos e
+> funções para filtrar, classificar e agrupar coleções de páginas.
 
-[page collections quick reference guide]: /quick-reference/page-collections/
+[guia de referência rápida de coleções de páginas]: /quick-reference/page-collections/
