@@ -7,10 +7,14 @@
 # The original work was translated from English into Brazilian Portuguese.
 # https://github.com/gohugoio/hugoDocs/blob/master/content/LICENSE.md
 
+source_url: https://github.com/gohugoio/hugoDocs/blob/master/content/en/_common/content-format-table.md
+revision: b6cae5cbc662fa92a00d123bd758fe1205b8a07e
+status: ready
+
 _comment: Do not remove front matter.
 ---
 
-Content format|Media type|Identifier|File extensions
+Formato de conteúdo|Tipo de mídia|Identificador|Extensões de arquivo
 :--|:--|:--|:--
 Markdown|`text/markdown`|`markdown`|`markdown`,`md`, `mdown`
 HTML|`text/html`|`html`|`htm`, `html`
