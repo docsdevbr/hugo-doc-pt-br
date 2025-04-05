@@ -7,8 +7,12 @@
 # The original work was translated from English into Brazilian Portuguese.
 # https://github.com/gohugoio/hugoDocs/blob/master/content/LICENSE.md
 
-title: License
-description: Hugo is released under the Apache 2.0 license.
+source_url: https://github.com/gohugoio/hugoDocs/blob/master/content/en/about/license.md
+revision: b6cae5cbc662fa92a00d123bd758fe1205b8a07e
+status: ready
+
+title: Licença
+description: O Hugo é lançado sob a licença Apache 2.0.
 categories: []
 keywords: []
 weight: 40
