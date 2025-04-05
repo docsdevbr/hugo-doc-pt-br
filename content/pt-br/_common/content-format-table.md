@@ -14,12 +14,12 @@ status: ready
 _comment: Do not remove front matter.
 ---
 
-Formato de conteúdo|Tipo de mídia|Identificador|Extensões de arquivo
-:--|:--|:--|:--
-Markdown|`text/markdown`|`markdown`|`markdown`,`md`, `mdown`
-HTML|`text/html`|`html`|`htm`, `html`
-Emacs Org Mode|`text/org`|`org`|`org`
-AsciiDoc|`text/asciidoc`|`asciidoc`|`ad`, `adoc`, `asciidoc`
-Pandoc|`text/pandoc`|`pandoc`|`pandoc`, `pdc`
-reStructuredText|`text/rst`|`rst`|`rst`
+ Formato de conteúdo | Tipo de mídia   | Identificador | Extensões de arquivo     
+:--------------------|:----------------|:--------------|:-------------------------
+ Markdown            | `text/markdown` | `markdown`    | `markdown`,`md`, `mdown` 
+ HTML                | `text/html`     | `html`        | `htm`, `html`            
+ Emacs Org Mode      | `text/org`      | `org`         | `org`                    
+ AsciiDoc            | `text/asciidoc` | `asciidoc`    | `ad`, `adoc`, `asciidoc` 
+ Pandoc              | `text/pandoc`   | `pandoc`      | `pandoc`, `pdc`          
+ reStructuredText    | `text/rst`      | `rst`         | `rst`                    
 <!-- do not remove this comment -->
