@@ -58,13 +58,13 @@ O Hugo utiliza [Módulos Go] para gerenciar suas dependências, compilando como 
 binário estático.
 Os [Módulos Go] criam um arquivo `go.sum`, um recurso de segurança crítico.
 Este arquivo atua como um banco de dados, armazenando os checksums
-criptográficos esperadas de todas as dependências, incluindo aquelas necessárias
+criptográficos esperados de todas as dependências, incluindo aquelas requeridas
 indiretamente (dependências transitivas).
 
 Os [Módulos Hugo], que estendem a funcionalidade dos Módulos Go, também produzem
 um arquivo `go.sum`.
-Para garantir a integridade da dependência, envie este arquivo `go.sum` para seu
-controle de versão.
+Para garantir a integridade das dependências, envie este arquivo `go.sum` para
+seu controle de versão.
 Se o Hugo detectar uma incompatibilidade de checksum durante o processo de
 construção, ele falhará, indicando uma possível tentativa de
 [adulterar as dependências do seu projeto].
@@ -106,9 +106,9 @@ shortcodes e nos dados contidos em seus arquivos de conteúdo.
 
 É vital lembrar que o Hugo é um gerador de site estático.
 Essa escolha arquitetônica reduz significativamente a superfície de ataque,
-eliminando as complexidades e vulnerabilidades associadas à entrada dinâmica da
-pessoa usuária.
-Ao contrário de sites dinâmicos, o Hugo gera arquivos HTML estáticos,
+eliminando as complexidades e vulnerabilidades associadas à entrada dinâmica de
+dados da pessoa usuária.
+Ao contrário dos sites dinâmicos, o Hugo gera arquivos HTML estáticos,
 minimizando o risco de ataques em tempo real.
 Em relação ao conteúdo, o renderizador Markdown padrão do Hugo é
 [configurado para sanitizar] conteúdo potencialmente inseguro.
@@ -135,4 +135,4 @@ segurança minimizando vulnerabilidades dinâmicas.
 
 ## Configuração
 
-Consulte [Configurar a segurança](/configuration/security/).
+Consulte [Configure a segurança](/configuration/security/).
