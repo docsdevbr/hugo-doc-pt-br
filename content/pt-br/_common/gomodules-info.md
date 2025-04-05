@@ -7,15 +7,23 @@
 # The original work was translated from English into Brazilian Portuguese.
 # https://github.com/gohugoio/hugoDocs/blob/master/content/LICENSE.md
 
+source_url: https://github.com/gohugoio/hugoDocs/blob/master/content/en/_common/gomodules-info.md
+revision: f26ca047a567980ffec8a62e2feade06d143426f
+status: ready
+
 _comment: Do not remove front matter.
 ---
 
-> [!note] Hugo Modules are Go Modules
-> You need [Go] version 1.18 or later and [Git] to use Hugo Modules. For older sites hosted on Netlify, please ensure the `GO_VERSION` environment variable is set to `1.18` or higher.
+> [!note] Módulos Hugo são Módulos Go
+> Você precisa do [Go] versão 1.18 ou posterior e do [Git] para usar Módulos
+> Hugo.
+> Para sites mais antigos hospedados na Netlify, certifique-se de que a variável
+> de ambiente `GO_VERSION` esteja definida como `1.18` ou superior.
 >
-> Go Modules resources:
+> Recursos dos Módulos Go:
 > - [go.dev/wiki/Modules](https://go.dev/wiki/Modules)
 > - [blog.golang.org/using-go-modules](https://go.dev/blog/using-go-modules)
 
 [Git]: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+
 [Go]: https://go.dev/doc/install
