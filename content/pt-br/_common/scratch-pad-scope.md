@@ -7,23 +7,33 @@
 # The original work was translated from English into Brazilian Portuguese.
 # https://github.com/gohugoio/hugoDocs/blob/master/content/LICENSE.md
 
+source_url: https://github.com/gohugoio/hugoDocs/blob/master/content/en/_common/scratch-pad-scope.md
+revision: 6a7fd42ff739686d112ce9b13f9141952cdea556
+status: ready
+
 _comment: Do not remove front matter.
 ---
 
-## Scope
+## Escopo
 
-The method or function used to create a scratch pad determines its scope. For example, use the `Store` method on a `Page` object to create a scratch pad scoped to the page.
+O método ou função usado para criar um bloco de rascunho determina seu escopo.
+Por exemplo, use o método `Store` em um objeto `Page` para criar um bloco de
+rascunho com escopo na página.
 
-Scope|Method or function
-:--|:--
-page|[`PAGE.Store`]
-site|[`SITE.Store`] 
-global|[`hugo.Store`]
-local|[`collections.NewScratch`]
-shortcode|[`SHORTCODE.Store`]
+ Escopo    | Método ou função
+:----------|:------------------------
+ página    | [`PAGE.Store`]
+ site      | [`SITE.Store`]
+ global    | [`hugo.Store`]
+ local     | [`collections.NewScratch`]
+ shortcode | [`SHORTCODE.Store`]
+
+[`collections.newscratch`]: functions/collections/newscratch
+
+[`hugo.store`]: /functions/hugo/store
 
 [`page.store`]: /methods/page/store
+
 [`site.store`]: /methods/site/store
-[`hugo.store`]: /functions/hugo/store
-[`collections.newscratch`]: functions/collections/newscratch
+
 [`shortcode.store`]: /methods/shortcode/store
