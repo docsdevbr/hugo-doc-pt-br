@@ -14,7 +14,7 @@ status: ready
 _comment: Do not remove front matter.
 ---
 
-Formate um valor `time.Time` com base no [tempo de referência do Go]:
+Formata um valor `time.Time` com base no [tempo de referência do Go]:
 
 [tempo de referência do Go]: https://pkg.go.dev/time#pkg-constants
 
@@ -22,7 +22,7 @@ Formate um valor `time.Time` com base no [tempo de referência do Go]:
 Mon Jan 2 15:04:05 MST 2006
 ```
 
-Cria uma string de layout usando estes componentes:
+Crie uma string de layout usando estes componentes:
 
  Descrição                     | Componentes válidos
 :------------------------------|:-----------------------------------------------
