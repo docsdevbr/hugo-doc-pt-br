@@ -87,7 +87,7 @@ Retorna um array de valores de `key` ordenados por `mapKey`.
 ```go-html-template
 {{ .Store.SetInMap "greetings" "portuguese" "Olá" }}
 {{ .Store.SetInMap "greetings" "french" "Bonjour" }}
-{{ .Store.GetSortedMapValues "greetings" }} → [Olá Bonjour]
+{{ .Store.GetSortedMapValues "greetings" }} → [Bonjour Olá]
 ```
 
 ### Delete
