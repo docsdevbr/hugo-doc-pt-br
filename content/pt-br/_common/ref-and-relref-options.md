@@ -7,14 +7,24 @@
 # The original work was translated from English into Brazilian Portuguese.
 # https://github.com/gohugoio/hugoDocs/blob/master/content/LICENSE.md
 
+source_url: https://github.com/gohugoio/hugoDocs/blob/master/content/en/_common/ref-and-relref-options.md
+revision: b6cae5cbc662fa92a00d123bd758fe1205b8a07e
+status: ready
+
 _comment: Do not remove front matter.
 ---
 
 path
-: (`string`) The path to the target page. Paths without a leading slash (`/`) are resolved first relative to the current page, and then relative to the rest of the site.
+: (`string`) O caminho para a página de destino.
+Caminhos sem uma barra inicial (`/`) são resolvidos primeiro em relação à página
+atual e, em seguida, em relação ao restante do site.
 
 lang
-: (`string`) The language of the target page. Default is the current language. Optional.
+: (`string`) O idioma da página de destino.
+O padrão é o idioma atual.
+Opcional.
 
 outputFormat
-: (`string`) The output format of the target page. Default is the current output format. Optional.
+: (`string`) O formato de saída da página de destino.
+O padrão é o formato de saída atual.
+Opcional.
