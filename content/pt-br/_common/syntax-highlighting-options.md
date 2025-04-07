@@ -7,58 +7,103 @@
 # The original work was translated from English into Brazilian Portuguese.
 # https://github.com/gohugoio/hugoDocs/blob/master/content/LICENSE.md
 
+source_url: https://github.com/gohugoio/hugoDocs/blob/master/content/en/_common/syntax-highlighting-options.md
+revision: c540e6d295880311a855308b1e14180cabbcd24a
+status: ready
+
 _comment: Do not remove front matter.
 ---
 
 anchorLineNos
-: (`bool`) Whether to render each line number as an HTML anchor element, setting the `id` attribute of the surrounding `span` element to the line number. Irrelevant if `lineNos` is `false`. Default is `false`.
+: (`bool`) Se deve renderizar cada número de linha como um elemento âncora HTML,
+definindo o atributo `id` do elemento `span` circundante para o número da linha.
+Irrelevante se `lineNos` for `false`.
+O padrão é `false`.
 
 codeFences
-: (`bool`) Whether to highlight fenced code blocks. Default is `true`.
+: (`bool`) Se deve destacar blocos de código isolados.
+O padrão é `true`.
 
 guessSyntax
-: (`bool`) Whether to automatically detect the language if the `LANG` argument is blank or set to a language for which there is no corresponding [lexer](g). Falls back to a plain text lexer if unable to automatically detect the language. Default is `false`.
+: (`bool`) Se deve detectar automaticamente a linguagem se o argumento `LANG`
+estiver em branco ou definido como uma linguagem para a qual não há um
+[lexer](g) correspondente.
+Retorna para um analisador léxico de texto simples se não for possível detectar
+a linguagem automaticamente.
+O padrão é `false`.
 
   > [!note]
-  > The Chroma syntax highlighter includes lexers for approximately 250 languages, but only 5 of these have implemented automatic language detection.
+  > O realçador de sintaxe Chroma inclui analisadores léxicos para
+  > aproximadamente 250 linguagens, mas apenas 5 deles implementaram a detecção
+  > automática de linguagem.
 
 hl_Lines
-: (`string`) A space-delimited list of lines to emphasize within the highlighted code. To emphasize lines 2, 3, 4, and 7, set this value to `2-4 7`. This option is independent of the `lineNoStart` option.
+: (`string`) Uma lista delimitada por espaços de linhas para enfatizar dentro do
+código destacado.
+Para enfatizar as linhas 2, 3, 4 e 7, defina este valor como `2-4 7`.
+Esta opção é independente da opção `lineNoStart`.
 
 hl_inline
-: (`bool`) Whether to render the highlighted code without a wrapping container. Default is `false`.
+: (`bool`) Se deve renderizar o código destacado sem um contêiner de
+encapsulamento.
+O padrão é `false`.
 
 lineAnchors
-: (`string`) When rendering a line number as an HTML anchor element, prepend this value to the `id` attribute of the surrounding `span` element. This provides unique `id` attributes when a page contains two or more code blocks. Irrelevant if `lineNos` or `anchorLineNos` is `false`.
+: (`string`) Ao renderizar um número de linha como um elemento âncora HTML,
+adicione este valor ao atributo `id` do elemento `span` circundante.
+Isso fornece atributos `id` exclusivos quando uma página contém dois ou mais
+blocos de código.
+Irrelevante se `lineNos` ou `anchorLineNos` for `false`.
 
 lineNoStart
-: (`int`) The number to display at the beginning of the first line. Irrelevant if `lineNos` is `false`. Default is `1`.
+: (`int`) O número a ser exibido no início da primeira linha.
+Irrelevante se `lineNos` for `false`.
+O padrão é `1`.
 
 lineNos
-: (`any`) Controls line number display. Default is `false`.
-  - `true`: Enable line numbers, controlled by `lineNumbersInTable`.
-  - `false`: Disable line numbers.
-  - `inline`: Enable inline line numbers (sets `lineNumbersInTable` to `false`).
-  - `table`: Enable table-based line numbers (sets `lineNumbersInTable` to `true`).
+: (`any`) Controla a exibição do número da linha.
+O padrão é `false`.
+  - `true`: Habilita os números de linha, controlados por `lineNumbersInTable`.
+  - `false`: Desabilita os números de linha.
+  - `inline`: Habilita os números de linha em linha (define `lineNumbersInTable`
+    como `false`).
+  - `table`: Habilita os números de linha baseados em tabela (define
+    `lineNumbersInTable` como `true`).
 
 lineNumbersInTable
-: (`bool`) Whether to render the highlighted code in an HTML table with two cells. The left table cell contains the line numbers, while the right table cell contains the code. Irrelevant if `lineNos` is `false`. Default is `true`.
+: (`bool`) Se deve renderizar o código destacado em uma tabela HTML com duas
+células.
+A célula de tabela à esquerda contém os números de linha, enquanto a célula de
+tabela à direita contém o código.
+Irrelevante se `lineNos` for `false`.
+O padrão é `true`.
 
 noClasses
-: (`bool`) Whether to use inline CSS styles instead of an external CSS file. Default is `true`. To use an external CSS file, set this value to `false` and generate the CSS file from the command line:
+: (`bool`) Se deve usar estilos CSS em linha em vez de um arquivo CSS externo.
+O padrão é `true`.
+Para usar um arquivo CSS externo, defina este valor como `false` e gere o
+arquivo CSS a partir da linha de comando:
 
   ```text
   hugo gen chromastyles --style=monokai > syntax.css
   ```
 
 style
-: (`string`) The CSS styles to apply to the highlighted code. Case-sensitive. Default is `monokai`. See [syntax highlighting styles].
+: (`string`) Os estilos CSS a serem aplicados ao código ralçado.
+Diferencia maiúsculas de minúsculas.
+O padrão é `monokai`.
+Veja [estilos de realce de sintaxe].
 
 tabWidth
-: (`int`) Substitute this number of spaces for each tab character in your highlighted code. Irrelevant if `noClasses` is `false`. Default is `4`.
+: (`int`) Substitua este número de espaços para cada caractere de tabulação no
+seu código destacado.
+Irrelevante se `noClasses` for `false`.
+O padrão é `4`.
 
 wrapperClass
 : {{< new-in 0.140.2 />}}
-: (`string`) The class or classes to use for the outermost element of the highlighted code. Default is `highlight`.
+: (`string`) A classe ou classes a serem usadas para o elemento mais externo do
+código destacado.
+O padrão é `highlight`.
 
-[syntax highlighting styles]: /quick-reference/syntax-highlighting-styles/
+[estilos de realce de sintaxe]: /quick-reference/syntax-highlighting-styles/
