@@ -7,73 +7,94 @@
 # The original work was translated from English into Brazilian Portuguese.
 # https://github.com/gohugoio/hugoDocs/blob/master/content/LICENSE.md
 
+source_url: https://github.com/gohugoio/hugoDocs/blob/master/content/en/_common/permalink-tokens.md
+revision: b6cae5cbc662fa92a00d123bd758fe1205b8a07e
+status: ready
+
 _comment: Do not remove front matter.
 ---
 
 `:year`
-: The 4-digit year as defined in the front matter `date` field.
+: O ano de 4 dígitos conforme definido no campo `date` da front matter.
 
 `:month`
-: The 2-digit month as defined in the front matter `date` field.
+: O mês de 2 dígitos conforme definido no campo `date` da front matter.
 
 `:monthname`
-: The name of the month as defined in the front matter `date` field.
+: O nome do mês conforme definido no campo `date` da front matter.
 
 `:day`
-: The 2-digit day as defined in the front matter `date` field.
+: O dia de 2 dígitos conforme definido no campo `date` da front matter.
 
 `:weekday`
-: The 1-digit day of the week as defined in the front matter `date` field  (Sunday = `0`).
+: O dia da semana de 1 dígito conforme definido no campo `date` da front matter
+(domingo = `0`).
 
 `:weekdayname`
-: The name of the day of the week as defined in the front matter `date` field.
+: O nome do dia da semana conforme definido no campo `date` da front matter.
 
 `:yearday`
-: The 1- to 3-digit day of the year as defined in the front matter `date` field.
+: O dia do ano de 1 a 3 dígitos conforme definido no campo `date` da front
+matter.
 
 `:section`
-: The content's section.
+: A seção do conteúdo.
 
 `:sections`
-: The content's sections hierarchy. You can use a selection of the sections using _slice syntax_: `:sections[1:]` includes all but the first, `:sections[:last]` includes all but the last, `:sections[last]` includes only the last, `:sections[1:2]` includes section 2 and 3. Note that this slice access will not throw any out-of-bounds errors, so you don't have to be exact.
+: A hierarquia das seções do conteúdo.
+Você pode usar uma seleção das seções usando a _sintaxe de fatia_:
+`:sections[1:]` inclui todas, exceto a primeira, `:sections[:last]` inclui
+todas, exceto a última, `:sections[last]` inclui apenas a última,
+`:sections[1:2]` inclui as seções 2 e 3.
+Observe que esse acesso de fatia não lançará erros do tipo fora dos limites,
+então você não precisa ser exato.
 
 `:title`
-: The `title` as defined in front matter, else the automatic title. Hugo generates titles automatically for section, taxonomy, and term pages that are not backed by a file.
+: O `title` conforme definido na front matter, senão o título automático.
+O Hugo gera títulos automaticamente para páginas de seção, taxonomia e termo que
+não são apoiadas por um arquivo.
 
 `:slug`
-: The `slug` as defined in front matter, else the `title` as defined in front matter, else the automatic title. Hugo generates titles automatically for section, taxonomy, and term pages that are not backed by a file.
+: O `slug` conforme definido na front matter, senão o título conforme definido
+na front matter, senão o título automático.
+O Hugo gera títulos automaticamente para páginas de seção, taxonomia e termo que
+não são apoiadas por um arquivo.
 
 `:filename`
-: The content's file name without extension, applicable to the `page` page kind.
+: O nome do arquivo de conteúdo sem extensão, aplicável ao tipo de página
+`page`.
 
   {{< deprecated-in v0.144.0 >}}
-  The `:filename` token has been deprecated. Use `:contentbasename` instead.
+  O token `:filename` foi descontinuado.
+  Use `:contentbasename` em vez disso.
   {{< /deprecated-in >}}
 
 `:slugorfilename`
-: The `slug` as defined in front matter, else the content's file name without extension, applicable to the `page` page kind.
+: O `slug` conforme definido na front matter, senão o nome do arquivo de
+conteúdo sem extensão, aplicável ao tipo de página `page`.
 
   {{< deprecated-in v0.144.0 >}}
-  The `:slugorfilename` token has been deprecated. Use `:slugorcontentbasename` instead.
+  O token `:slugorfilename` foi descontinuado.
+  Use `:slugorcontentbasename` em vez disso.
   {{< /deprecated-in >}}
 
 `:contentbasename`
 : {{< new-in 0.144.0 />}}
-: The [content base name].
-
-[content base name]: /methods/page/file/#contentbasename
+: O [nome base do conteúdo].
 
 `:slugorcontentbasename`
 : {{< new-in 0.144.0 />}}
-: The `slug` as defined in front matter, else the [content base name].
+: O `slug` conforme definido na front matter, senão o [nome base do conteúdo].
 
-For time-related values, you can also use the layout string components defined in Go's [time package]. For example:
-
-[time package]: https://pkg.go.dev/time#pkg-constants
+Para valores relacionados ao tempo, você também pode usar os componentes de
+string de layout definidos no [pacote time] do Go.
+Por exemplo:
 
 {{< code-toggle file=hugo >}}
 permalinks:
   posts: /:06/:1/:2/:title/
 {{< /code-toggle >}}
 
-[content base name]: /methods/page/file/#contentbasename
+[nome base do conteúdo]: /methods/page/file/#contentbasename
+
+[pacote time]: https://pkg.go.dev/time#pkg-constants
