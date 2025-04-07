@@ -7,6 +7,10 @@
 # The original work was translated from English into Brazilian Portuguese.
 # https://github.com/gohugoio/hugoDocs/blob/master/content/LICENSE.md
 
+source_url: https://github.com/gohugoio/hugoDocs/blob/master/content/en/_common/menu-entry-properties.md
+revision: b6cae5cbc662fa92a00d123bd758fe1205b8a07e
+status: ready
+
 _comment: Do not remove front matter.
 ---
 
@@ -15,25 +19,32 @@ This description list intentionally excludes the `pageRef` and `url` properties.
 -->
 
 identifier
-: (`string`) Required when two or more menu entries have the same `name`, or when localizing the `name` using translation tables. Must start with a letter, followed by letters, digits, or underscores.
+: (`string`) Obrigatório quando duas ou mais entradas de menu têm o mesmo `name`
+(nome), ou ao localizar o `name` usando tabelas de tradução.
+Deve começar com uma letra, seguida por letras, dígitos ou sublinhados.
 
 name
-: (`string`) The text to display when rendering the menu entry.
+: (`string`) O texto a ser exibido ao renderizar a entrada de menu.
 
 params
-: (`map`) User-defined properties for the menu entry.
+: (`map`) Propriedades definidas pela pessoa usuária para a entrada de menu.
 
 parent
-: (`string`) The `identifier` of the parent menu entry. If `identifier` is not defined, use `name`. Required for child entries in a nested menu.
+: (`string`) O `identifier` (identificador) da entrada de menu pai.
+Se o identificador não for definido, use `name`.
+Obrigatório para entradas filhas em um menu aninhado.
 
 post
-: (`string`) The HTML to append when rendering the menu entry.
+: (`string`) O HTML a ser anexado ao renderizar a entrada de menu.
 
 pre
-: (`string`) The HTML to prepend when rendering the menu entry.
+: (`string`) O HTML a ser prefixado ao renderizar a entrada de menu.
 
 title
-: (`string`) The HTML `title` attribute of the rendered menu entry.
+: (`string`) O atributo `title` HTML da entrada de menu renderizada.
 
 weight
-: (`int`) A non-zero integer indicating the entry's position relative the root of the menu, or to its parent for a child entry. Lighter entries float to the top, while heavier entries sink to the bottom.
+: (`int`) Um inteiro diferente de zero que indica a posição da entrada em
+relação à raiz do menu, ou ao seu pai para uma entrada filha.
+Entradas mais leves flutuam para o topo, enquanto entradas mais pesadas afundam
+para a base.
