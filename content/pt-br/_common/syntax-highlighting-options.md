@@ -28,8 +28,8 @@ guessSyntax
 : (`bool`) Se deve detectar automaticamente a linguagem se o argumento `LANG`
 estiver em branco ou definido como uma linguagem para a qual não há um
 [lexer](g) correspondente.
-Retorna para um analisador léxico de texto simples se não for possível detectar
-a linguagem automaticamente.
+Utiliza um analisador léxico de texto simples se não for possível detectar a
+linguagem automaticamente.
 O padrão é `false`.
 
   > [!note]
@@ -95,7 +95,7 @@ O padrão é `monokai`.
 Veja [estilos de realce de sintaxe].
 
 tabWidth
-: (`int`) Substitua este número de espaços para cada caractere de tabulação no
+: (`int`) Substitui este número de espaços para cada caractere de tabulação no
 seu código destacado.
 Irrelevante se `noClasses` for `false`.
 O padrão é `4`.
