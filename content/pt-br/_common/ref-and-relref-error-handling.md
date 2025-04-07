@@ -7,12 +7,19 @@
 # The original work was translated from English into Brazilian Portuguese.
 # https://github.com/gohugoio/hugoDocs/blob/master/content/LICENSE.md
 
+source_url: https://github.com/gohugoio/hugoDocs/blob/master/content/en/_common/ref-and-relref-error-handling.md
+revision: b6cae5cbc662fa92a00d123bd758fe1205b8a07e
+status: ready
+
 _comment: Do not remove front matter.
 ---
 
-By default, Hugo will throw an error and fail the build if it cannot resolve the path. You can change this to a warning in your site configuration, and specify a URL to return when the path cannot be resolved.
+Por padrão, o Hugo lançará um erro e falhará na construção se não puder resolver
+o caminho.
+Você pode alterar isso para um alerta na configuração do seu site e especificar
+uma URL para retornar quando o caminho não puder ser resolvido.
 
 {{< code-toggle file=hugo >}}
 refLinksErrorLevel = 'warning'
-refLinksNotFoundURL = '/some/other/url'
+refLinksNotFoundURL = '/alguma/outra/url'
 {{< /code-toggle >}}
