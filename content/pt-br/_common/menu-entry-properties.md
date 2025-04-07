@@ -31,7 +31,7 @@ params
 
 parent
 : (`string`) O `identifier` (identificador) da entrada de menu pai.
-Se o identificador não for definido, use `name`.
+Se o `identifier` não for definido, use `name`.
 Obrigatório para entradas filhas em um menu aninhado.
 
 post
