@@ -92,7 +92,7 @@ style
 : (`string`) Os estilos CSS a serem aplicados ao código ralçado.
 Diferencia maiúsculas de minúsculas.
 O padrão é `monokai`.
-Veja [estilos de realce de sintaxe].
+Consulte [estilos de realce de sintaxe].
 
 tabWidth
 : (`int`) Substitui este número de espaços para cada caractere de tabulação no
