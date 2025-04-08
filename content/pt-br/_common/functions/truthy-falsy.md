@@ -7,9 +7,15 @@
 # The original work was translated from English into Brazilian Portuguese.
 # https://github.com/gohugoio/hugoDocs/blob/master/content/LICENSE.md
 
+source_url: https://github.com/gohugoio/hugoDocs/blob/master/content/en/_common/functions/truthy-falsy.md
+revision: b6cae5cbc662fa92a00d123bd758fe1205b8a07e
+status: ready
+
 _comment: Do not remove front matter.
 ---
 
-The falsy values are `false`, `0`, any `nil` pointer or interface value, any array, slice, map, or string of length zero, and zero `time.Time` values.
+Os valores falsos são `false`, `0`, qualquer ponteiro `nil` ou valor de
+interface, qualquer array, slice, map ou string de comprimento zero e valores
+`time.Time` zero.
 
-Everything else is truthy.
+Todo o resto é verdadeiro.
