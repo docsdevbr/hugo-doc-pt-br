@@ -7,10 +7,16 @@
 # The original work was translated from English into Brazilian Portuguese.
 # https://github.com/gohugoio/hugoDocs/blob/master/content/LICENSE.md
 
+source_url: https://github.com/gohugoio/hugoDocs/blob/master/content/en/_common/functions/locales.md
+revision: c540e6d295880311a855308b1e14180cabbcd24a
+status: ready
+
 _comment: Do not remove front matter.
 ---
 
 > [!note]
-> Localization of dates, currencies, numbers, and percentages is performed by the [gohugoio/locales] package. The language tag of the current site must match one of the listed locales.
+> A localização de datas, moedas, números e porcentagens é realizada pelo pacote
+> [gohugoio/locales].
+> A tag language do site atual deve corresponder a um dos locales listados.
 
 [gohugoio/locales]: https://github.com/gohugoio/locales
