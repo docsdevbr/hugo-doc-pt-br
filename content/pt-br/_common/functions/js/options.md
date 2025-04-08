@@ -103,9 +103,9 @@ Use isso para reduzir dependências que você sabe que nunca serão executadas.
 Consulte https://esbuild.github.io/api/#external.
 
 defines
-: (`map`) Permite definir um conjunto de substituição de strings a ser executado
-durante a construção.
-Deve ser um mapa onde cada chave deve ser substituída por seu valor.
+: (`map`) Esta opção permite definir um conjunto de substituições de strings a
+serem executadas durante a construção.
+Deve ser um mapa onde cada chave será substituída por seu valor.
 
   ```go-html-template
   {{ $defines := dict "process.env.NODE_ENV" `"development"` }}
