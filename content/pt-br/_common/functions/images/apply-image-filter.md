@@ -7,10 +7,14 @@
 # The original work was translated from English into Brazilian Portuguese.
 # https://github.com/gohugoio/hugoDocs/blob/master/content/LICENSE.md
 
+source_url: https://github.com/gohugoio/hugoDocs/blob/master/content/en/_common/functions/images/apply-image-filter.md
+revision: b6cae5cbc662fa92a00d123bd758fe1205b8a07e
+status: ready
+
 _comment: Do not remove front matter.
 ---
 
-Apply the filter using the [`images.Filter`] function:
+Aplique o filtro usando a função [`images.Filter`]:
 
 [`images.Filter`]: /functions/images/filter/
 
@@ -22,7 +26,8 @@ Apply the filter using the [`images.Filter`] function:
 {{ end }}
 ```
 
-You can also apply the filter using the [`Filter`] method on a `Resource` object:
+Você também pode aplicar o filtro usando o método [`Filter`] em um objeto
+`Resource`:
 
 [`Filter`]: /methods/resource/filter/
 
