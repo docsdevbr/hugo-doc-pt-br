@@ -7,18 +7,23 @@
 # The original work was translated from English into Brazilian Portuguese.
 # https://github.com/gohugoio/hugoDocs/blob/master/content/LICENSE.md
 
+source_url: https://github.com/gohugoio/hugoDocs/blob/master/content/en/_common/functions/urls/anchorize-vs-urlize.md
+revision: b6cae5cbc662fa92a00d123bd758fe1205b8a07e
+status: ready
+
 _comment: Do not remove front matter.
 ---
 
-The [`anchorize`] and [`urlize`] functions are similar:
+As funções [`anchorize`] e [`urlize`] são semelhantes:
 
 [`anchorize`]: /functions/urls/anchorize/
+
 [`urlize`]: /functions/urls/urlize/
 
-- Use the `anchorize` function to generate an HTML `id` attribute value
-- Use the `urlize` function to sanitize a string for usage in a URL
+- Use a função `anchorize` para gerar um valor de atributo `id` HTML.
+- Use a função `urlize` para sanitizar uma string para uso em uma URL.
 
-For example:
+Por exemplo:
 
 ```go-html-template
 {{ $s := "A B C" }}
