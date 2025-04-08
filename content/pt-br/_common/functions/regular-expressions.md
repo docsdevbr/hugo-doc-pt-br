@@ -20,13 +20,13 @@ sintaxe.
 Com uma string literal interpretada, você deve escapar barras invertidas.
 
 O pacote de expressão regular do Go implementa a [sintaxe RE2].
-A sintaxe RE2 é um subconjunto daquela aceita pela PCRE, falando grosso modo, e
-com várias ressalvas.
+A sintaxe RE2 é um subconjunto daquela aceita pela [PCRE], falando grosso modo,
+e com várias [ressalvas].
 Observe que a sequência de escape `\C` RE2 não é suportada.
 
-[caveats]: https://swtch.com/~rsc/regexp/regexp3.html#caveats
-
 [PCRE]: https://www.pcre.org/
+
+[ressalvas]: https://swtch.com/~rsc/regexp/regexp3.html#caveats
 
 [sintaxe RE2]: https://github.com/google/re2/wiki/Syntax/
 
