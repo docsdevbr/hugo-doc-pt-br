@@ -7,9 +7,13 @@
 # The original work was translated from English into Brazilian Portuguese.
 # https://github.com/gohugoio/hugoDocs/blob/master/content/LICENSE.md
 
+source_url: https://github.com/gohugoio/hugoDocs/blob/master/content/en/_common/functions/go-template/text-template.md
+revision: b6cae5cbc662fa92a00d123bd758fe1205b8a07e
+status: ready
+
 _comment: Do not remove front matter.
 ---
 
-See Go's [text/template] documentation for more information.
+Consulte a documentação de [text/template] do Go para obter mais informações.
 
 [text/template]: https://pkg.go.dev/text/template
