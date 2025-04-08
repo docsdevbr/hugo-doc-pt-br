@@ -7,14 +7,27 @@
 # The original work was translated from English into Brazilian Portuguese.
 # https://github.com/gohugoio/hugoDocs/blob/master/content/LICENSE.md
 
+source_url: https://github.com/gohugoio/hugoDocs/blob/master/content/en/_common/functions/regular-expressions.md
+revision: b6cae5cbc662fa92a00d123bd758fe1205b8a07e
+status: ready
+
 _comment: Do not remove front matter.
 ---
 
-When specifying the regular expression, use a raw [string literal] (backticks) instead of an interpreted string literal (double quotes) to simplify the syntax. With an interpreted string literal you must escape backslashes.
+Ao especificar a expressão regular, use uma [string literal] bruta (crases) em
+vez de uma string literal interpretada (aspas duplas) para simplificar a
+sintaxe.
+Com uma string literal interpretada, você deve escapar barras invertidas.
 
-Go's regular expression package implements the [RE2 syntax]. The RE2 syntax is a subset of that accepted by [PCRE], roughly speaking, and with various [caveats]. Note that the RE2 `\C` escape sequence is not supported.
+O pacote de expressão regular do Go implementa a [sintaxe RE2].
+A sintaxe RE2 é um subconjunto daquela aceita pela PCRE, falando grosso modo, e
+com várias ressalvas.
+Observe que a sequência de escape `\C` RE2 não é suportada.
 
 [caveats]: https://swtch.com/~rsc/regexp/regexp3.html#caveats
+
 [PCRE]: https://www.pcre.org/
-[RE2 syntax]: https://github.com/google/re2/wiki/Syntax/
+
+[sintaxe RE2]: https://github.com/google/re2/wiki/Syntax/
+
 [string literal]: https://go.dev/ref/spec#String_literals
