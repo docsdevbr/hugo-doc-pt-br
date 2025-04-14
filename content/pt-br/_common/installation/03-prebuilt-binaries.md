@@ -7,25 +7,38 @@
 # The original work was translated from English into Brazilian Portuguese.
 # https://github.com/gohugoio/hugoDocs/blob/master/content/LICENSE.md
 
+source_url: https://github.com/gohugoio/hugoDocs/blob/master/content/en/_common/installation/03-prebuilt-binaries.md
+revision: b6cae5cbc662fa92a00d123bd758fe1205b8a07e
+status: ready
+
 _comment: Do not remove front matter.
 ---
 
-## Prebuilt binaries
+## Binários pré-compilados
 
-Prebuilt binaries are available for a variety of operating systems and architectures. Visit the [latest release] page, and scroll down to the Assets section.
+Binários pré-compilados estão disponíveis para diversos sistemas operacionais e
+arquiteturas.
+Visite a página da [versão mais recente] e role para baixo até a seção Assets.
 
-1. Download the archive for the desired edition, operating system, and architecture
-1. Extract the archive
-1. Move the executable to the desired directory
-1. Add this directory to the PATH environment variable
-1. Verify that you have _execute_ permission on the file
+1. Baixe o arquivo para a edição, sistema operacional e arquitetura desejados
+1. Extraia o arquivo
+1. Mova o executável para o diretório desejado
+1. Adicione este diretório à variável de ambiente `PATH`
+1. Verifique se você possui permissão de _execução_ no arquivo
 
-Please consult your operating system documentation if you need help setting file permissions or modifying your PATH environment variable.
+Consulte a documentação do seu sistema operacional se precisar de ajuda para
+definir permissões de arquivo ou modificar sua variável de ambiente `PATH`.
 
-If you do not see a prebuilt binary for the desired edition, operating system, and architecture, install Hugo using one of the methods described below.
+Se você não encontrar um binário pré-compilado para a edição, sistema
+operacional e arquitetura desejados, instale o Hugo usando um dos métodos
+descritos abaixo.
+
+[Git]: https://git-scm.com/
+
+[Go]: https://go.dev/
 
 [informações de commit]: /methods/page/gitinfo/
-[Git]: https://git-scm.com/
-[Go]: https://go.dev/
+
 [Módulos do Hugo]: /hugo-modules/
-[latest release]: https://github.com/gohugoio/hugo/releases/latest
+
+[versão mais recente]: https://github.com/gohugoio/hugo/releases/latest
