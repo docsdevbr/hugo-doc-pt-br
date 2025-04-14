@@ -14,8 +14,8 @@ status: ready
 _comment: Do not remove front matter.
 ---
 
-Hugo determina a _próxima_ página e a página _anterior_ classificando as páginas
-regulares da seção atual de acordo com esta hierarquia de classificação:
+O Hugo determina a _próxima_ página e a página _anterior_ classificando as
+páginas regulares da seção atual de acordo com esta hierarquia de classificação:
 
  Campo         | Precedência | Direção da classificação
 :--------------|:------------|:-------------------------
