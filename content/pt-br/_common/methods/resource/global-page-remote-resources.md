@@ -7,8 +7,13 @@
 # The original work was translated from English into Brazilian Portuguese.
 # https://github.com/gohugoio/hugoDocs/blob/master/content/LICENSE.md
 
+source_url: https://github.com/gohugoio/hugoDocs/blob/master/content/en/_common/methods/resource/global-page-remote-resources.md
+revision: c540e6d295880311a855308b1e14180cabbcd24a
+status: ready
+
 _comment: Do not remove front matter.
 ---
 
 > [!note]
-> Use this method with [global resources](g), [page resources](g), or [remote resources](g).
+> Use este método com [global resources](g), [page resources](g) ou
+> [remote resources](g).
