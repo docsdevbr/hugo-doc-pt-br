@@ -32,7 +32,7 @@ Neste tutorial você irá:
 
 Antes de começar este tutorial, você deve:
 
-1. [Instalar o Hugo] (edição estendida ou estendida/de implantação,
+1. [Instalar o Hugo] (edição estendida ou estendida/implantação,
    {{% param "minVersion" %}} ou posterior)
 1. [Instalar o Git]
 

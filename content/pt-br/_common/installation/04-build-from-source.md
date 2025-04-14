@@ -7,40 +7,56 @@
 # The original work was translated from English into Brazilian Portuguese.
 # https://github.com/gohugoio/hugoDocs/blob/master/content/LICENSE.md
 
+source_url: https://github.com/gohugoio/hugoDocs/blob/master/content/en/_common/installation/04-build-from-source.md
+revision: b6cae5cbc662fa92a00d123bd758fe1205b8a07e
+status: ready
+
 _comment: Do not remove front matter.
 ---
 
-## Build from source
+## Compilar a partir do código-fonte
 
-To build the extended or extended/deploy edition from source you must:
+Para compilar a edição estendida ou estendida/implantação a partir do
+código-fonte, você deve:
 
-1. Install [Git]
-1. Install [Go] version 1.23.0 or later
-1. Install a C compiler, either [GCC] or [Clang]
-1. Update your `PATH` environment variable as described in the [Go documentation]
+1. Instalar o [Git]
+1. Instalar o [Go] versão 1.23.0 ou posterior
+1. Instalar um compilador C, [GCC] ou [Clang]
+1. Atualizar sua variável de ambiente `PATH` conforme descrito na
+   [documentação do Go]
 
-> The install directory is controlled by the `GOPATH` and `GOBIN` environment variables. If `GOBIN` is set, binaries are installed to that directory. If `GOPATH` is set, binaries are installed to the bin subdirectory of the first directory in the `GOPATH` list. Otherwise, binaries are installed to the bin subdirectory of the default `GOPATH` (`$HOME/go` or `%USERPROFILE%\go`).
+> O diretório de instalação é controlado pelas variáveis de ambiente `GOPATH` e
+> `GOBIN`.
+> Se `GOBIN` estiver definida, os binários serão instalados nesse diretório.
+> Se `GOPATH` estiver definida, os binários serão instalados no subdiretório bin
+> do primeiro diretório na lista `GOPATH`.
+> Caso contrário, os binários serão instalados no subdiretório bin do `GOPATH`
+> padrão (`$HOME/go` ou `%USERPROFILE%\go`).
 
-To build the standard edition:
+Para compilar a edição padrão:
 
 ```sh
 go install github.com/gohugoio/hugo@latest
 ```
 
-To build the extended edition:
+Para compilar a edição estendida:
 
 ```sh
 CGO_ENABLED=1 go install -tags extended github.com/gohugoio/hugo@latest
 ```
 
-To build the extended/deploy edition:
+Para compilar a edição estendida/implantação:
 
 ```sh
 CGO_ENABLED=1 go install -tags extended,withdeploy github.com/gohugoio/hugo@latest
 ```
 
 [Clang]: https://clang.llvm.org/
+
+[documentação do Go]: https://go.dev/doc/code#Command
+
 [GCC]: https://gcc.gnu.org/
+
 [Git]: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
-[Go documentation]: https://go.dev/doc/code#Command
+
 [Go]: https://go.dev/doc/install
