@@ -7,38 +7,49 @@
 # The original work was translated from English into Brazilian Portuguese.
 # https://github.com/gohugoio/hugoDocs/blob/master/content/LICENSE.md
 
+source_url: https://github.com/gohugoio/hugoDocs/blob/master/content/en/_common/methods/page/next-and-prev.md
+revision: fd628be6ed3f1150d0030ba1424cc8f2da72efbb
+status: ready
+
 _comment: Do not remove front matter.
 ---
 
-Hugo determines the _next_ and _previous_ page by sorting the site's collection of regular pages according to this sorting hierarchy:
+O Hugo determina a _próxima_ página e a página _anterior_ classificando o
+conjunto de páginas regulares do site de acordo com esta hierarquia de
+classificação:
 
-Field|Precedence|Sort direction
-:--|:--|:--
-[`weight`]|1|descending
-[`date`]|2|descending
-[`linkTitle`]|3|descending
-[`path`]|4|descending
+ Campo         | Precedência | Direção da classificação 
+:--------------|:------------|:-------------------------
+ [`weight`]    | 1           | decrescente              
+ [`date`]      | 2           | decrescente              
+ [`linkTitle`] | 3           | decrescente              
+ [`path`]      | 4           | decrescente              
 
 [`date`]: /methods/page/date/
-[`weight`]: /methods/page/weight/
+
 [`linkTitle`]: /methods/page/linktitle/
+
 [`path`]: /methods/page/path/
 
-The sorted page collection used to determine the _next_ and _previous_ page is independent of other page collections, which may lead to unexpected behavior.
+[`weight`]: /methods/page/weight/
 
-For example, with this content structure:
+O conjunto de páginas classificadas usado para determinar a _próxima_ página e a
+página _anterior_ é independente de outros conjuntos de páginas, o que pode
+levar a comportamentos inesperados.
+
+Por exemplo, com esta estrutura de conteúdo:
 
 ```text
 content/
-├── pages/
+├── paginas/
 │   ├── _index.md
-│   ├── page-1.md   <-- front matter: weight = 10
-│   ├── page-2.md   <-- front matter: weight = 20
-│   └── page-3.md   <-- front matter: weight = 30
+│   ├── pagina-1.md   <-- front matter: weight = 10
+│   ├── pagina-2.md   <-- front matter: weight = 20
+│   └── pagina-3.md   <-- front matter: weight = 30
 └── _index.md
 ```
 
-And these templates:
+E estes templates:
 
 ```go-html-template {file="layouts/_default/list.html"}
 {{ range .Pages.ByWeight }}
@@ -48,21 +59,25 @@ And these templates:
 
 ```go-html-template {file="layouts/_default/single.html"}
 {{ with .Prev }}
-  <a href="{{ .RelPermalink }}">Previous</a>
+  <a href="{{ .RelPermalink }}">Anterior</a>
 {{ end }}
 
 {{ with .Next }}
-  <a href="{{ .RelPermalink }}">Next</a>
+  <a href="{{ .RelPermalink }}">Próxima</a>
 {{ end }}
 ```
 
-When you visit page-2:
+Ao visitar a pagina-2:
 
-- The `Prev` method points to page-3
-- The `Next` method points to page-1
+- O método `Prev` aponta para pagina-3
+- O método `Next` aponta para pagina-1
 
-To reverse the meaning of _next_ and _previous_ you can change the sort direction in your [site configuration], or use the [`Next`] and [`Prev`] methods on a `Pages` object for more flexibility.
+Para inverter o significado de _próxima_ e _anterior_, você pode alterar a
+direção de classificação na [configuração do site] ou usar os métodos [`Next`] e
+[`Prev`] em um objeto `Pages` para maior flexibilidade.
 
-[site configuration]: /configuration/page/
+[configuração do site]: /configuration/page/
+
 [`Next`]: /methods/pages/prev
+
 [`Prev`]: /methods/pages/prev
