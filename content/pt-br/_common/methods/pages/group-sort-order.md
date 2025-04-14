@@ -7,7 +7,12 @@
 # The original work was translated from English into Brazilian Portuguese.
 # https://github.com/gohugoio/hugoDocs/blob/master/content/LICENSE.md
 
+source_url: https://github.com/gohugoio/hugoDocs/blob/master/content/en/_common/methods/pages/group-sort-order.md
+revision: b6cae5cbc662fa92a00d123bd758fe1205b8a07e
+status: ready
+
 _comment: Do not remove front matter.
 ---
 
-For the optional sort order, specify either `asc` for ascending order, or `desc` for descending order.
+Para a ordem de classificação opcional, especifique `asc` para ordem crescente
+ou `desc` para ordem decrescente.
