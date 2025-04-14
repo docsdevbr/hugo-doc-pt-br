@@ -18,12 +18,12 @@ O Hugo determina a _próxima_ página e a página _anterior_ classificando o
 conjunto de páginas regulares do site de acordo com esta hierarquia de
 classificação:
 
- Campo         | Precedência | Direção da classificação 
+ Campo         | Precedência | Direção da classificação
 :--------------|:------------|:-------------------------
- [`weight`]    | 1           | decrescente              
- [`date`]      | 2           | decrescente              
- [`linkTitle`] | 3           | decrescente              
- [`path`]      | 4           | decrescente              
+ [`weight`]    | 1           | decrescente
+ [`date`]      | 2           | decrescente
+ [`linkTitle`] | 3           | decrescente
+ [`path`]      | 4           | decrescente
 
 [`date`]: /methods/page/date/
 
