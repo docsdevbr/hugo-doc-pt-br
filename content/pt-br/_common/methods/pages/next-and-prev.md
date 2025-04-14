@@ -14,11 +14,11 @@ status: ready
 _comment: Do not remove front matter.
 ---
 
-O Hugo determina a _próxima_ página e a página _anterior_ classificando o
-conjunto de páginas de acordo com esta hierarquia de classificação:
+O Hugo determina a _próxima_ página e a página _anterior_ ordenando o conjunto
+de páginas de acordo com esta hierarquia de ordenação:
 
- Campo         | Precedência | Direção de classificação
-:--------------|:------------|:-------------------------
+ Campo         | Precedência | Direção de ordenação
+:--------------|:------------|:--------------------
  [`weight`]    | 1           | decrescente
  [`date`]      | 2           | decrescente
  [`linkTitle`] | 3           | decrescente
@@ -32,7 +32,7 @@ conjunto de páginas de acordo com esta hierarquia de classificação:
 
 [`weight`]: /methods/page/weight/
 
-O conjunto de páginas classificado usado para determinar a _próxima_ página e a
+O conjunto de páginas ordenadas usado para determinar a _próxima_ página e a
 página _anterior_ é independente de outros conjuntos de páginas, o que pode
 levar a comportamentos inesperados.
 

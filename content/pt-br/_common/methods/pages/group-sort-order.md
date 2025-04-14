@@ -14,5 +14,5 @@ status: ready
 _comment: Do not remove front matter.
 ---
 
-Para a ordem de classificação opcional, especifique `asc` para ordem crescente
+Para a ordem de ordenação opcional, especifique `asc` para ordem crescente
 ou `desc` para ordem decrescente.

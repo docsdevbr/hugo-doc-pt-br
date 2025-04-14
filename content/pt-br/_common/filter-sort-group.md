@@ -16,6 +16,6 @@ _comment: Do not remove front matter.
 
 > [!note]
 > O [guia de referência rápida de coleções de páginas] descreve métodos e
-> funções para filtrar, classificar e agrupar coleções de páginas.
+> funções para filtrar, ordenar e agrupar coleções de páginas.
 
 [guia de referência rápida de coleções de páginas]: /quick-reference/page-collections/

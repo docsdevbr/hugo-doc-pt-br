@@ -32,10 +32,10 @@ E esta estrutura de conteúdo:
 ```text
 content/
 ├── livros/
-│   ├── e-nao-sobrou-nenhum.md    --> generos: suspense
-│   ├── morte-no-nilo.md          --> generos: suspense
-│   ├── a-pousada-da-jamaica.md   --> generos: suspense, romance
-│   └── orgulho-e-preconceito.md  --> generos: romance
+│   ├── e-nao-sobrou-nenhum.md   --> generos: suspense
+│   ├── morte-no-nilo.md         --> generos: suspense
+│   ├── a-pousada-da-jamaica.md  --> generos: suspense, romance
+│   └── orgulho-e-preconceito.md --> generos: romance
 └── _index.md
 ```
 

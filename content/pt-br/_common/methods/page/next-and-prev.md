@@ -14,12 +14,11 @@ status: ready
 _comment: Do not remove front matter.
 ---
 
-O Hugo determina a _próxima_ página e a página _anterior_ classificando o
-conjunto de páginas regulares do site de acordo com esta hierarquia de
-classificação:
+O Hugo determina a _próxima_ página e a página _anterior_ ordenando o conjunto
+de páginas regulares do site de acordo com esta hierarquia de ordenação:
 
- Campo         | Precedência | Direção da classificação
-:--------------|:------------|:-------------------------
+ Campo         | Precedência | Direção da ordenação
+:--------------|:------------|:--------------------
  [`weight`]    | 1           | decrescente
  [`date`]      | 2           | decrescente
  [`linkTitle`] | 3           | decrescente
@@ -33,7 +32,7 @@ classificação:
 
 [`weight`]: /methods/page/weight/
 
-O conjunto de páginas classificadas usado para determinar a _próxima_ página e a
+O conjunto de páginas ordenadas usado para determinar a _próxima_ página e a
 página _anterior_ é independente de outros conjuntos de páginas, o que pode
 levar a comportamentos inesperados.
 
@@ -73,7 +72,7 @@ Ao visitar a pagina-2:
 - O método `Next` aponta para pagina-1
 
 Para inverter o significado de _próxima_ e _anterior_, você pode alterar a
-direção de classificação na [configuração do site] ou usar os métodos [`Next`] e
+direção de ordenação na [configuração do site] ou usar os métodos [`Next`] e
 [`Prev`] em um objeto `Pages` para maior flexibilidade.
 
 [configuração do site]: /configuration/page/
