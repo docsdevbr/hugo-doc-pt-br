@@ -19,11 +19,11 @@ estendida/implantação.
 Enquanto a edição padrão oferece funcionalidades básicas, as edições estendida e
 estendida/implantação oferecem recursos avançados.
 
- Recurso                                                                                                                                        |  edição estendida  | edição estendida/implantação
-:-----------------------------------------------------------------------------------------------------------------------------------------------|:------------------:|:----------------------------:
- Codifique para o formato WebP ao [processar imagens]. Você pode decodificar imagens WebP com qualquer edição.                                  | :heavy_check_mark: |      :heavy_check_mark:
- [Transpile Sass para CSS] usando o transpilador LibSass incorporado. Você pode usar o transpilador [Dart Sass] com qualquer edição.            | :heavy_check_mark: |      :heavy_check_mark:
- Implante seu site diretamente em um bucket do Google Cloud Storage, um bucket do AWS S3 ou um contêiner do Azure Storage. Consulte [detalhes]. |        :x:         |      :heavy_check_mark:
+ Recurso                                                                                                                                           |  edição estendida  | edição estendida/implantação
+:--------------------------------------------------------------------------------------------------------------------------------------------------|:------------------:|:----------------------------:
+ Codifique para o formato WebP ao [processar imagens]. Você pode decodificar imagens WebP com qualquer edição.                                     | :heavy_check_mark: |      :heavy_check_mark:
+ [Transpile Sass para CSS] usando o transpilador LibSass incorporado. Você pode usar o transpilador [Dart Sass] com qualquer edição.               | :heavy_check_mark: |      :heavy_check_mark:
+ Implante seu site diretamente em um bucket do Google Cloud Storage, um bucket do AWS S3 ou um contêiner do Azure Storage. Consulte os [detalhes]. |        :x:         |      :heavy_check_mark:
 
 [Dart Sass]: /functions/css/sass/#dart-sass
 
