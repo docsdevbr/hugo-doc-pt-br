@@ -7,42 +7,59 @@
 # The original work was translated from English into Brazilian Portuguese.
 # https://github.com/gohugoio/hugoDocs/blob/master/content/LICENSE.md
 
+source_url: https://github.com/gohugoio/hugoDocs/blob/master/content/en/_common/installation/02-prerequisites.md
+revision: b6cae5cbc662fa92a00d123bd758fe1205b8a07e
+status: ready
+
 _comment: Do not remove front matter.
 ---
 
-## Prerequisites
+## Pré-requisitos
 
-Although not required in all cases, [Git], [Go], and [Dart Sass] are commonly used when working with Hugo.
+Embora não sejam obrigatórios em todos os casos, [Git], [Go] e [Dart Sass] são
+comumente usados ao trabalhar com o Hugo.
 
-Git is required to:
+O Git é necessário para:
 
-- Build Hugo from source
-- Use the [Hugo Modules] feature
-- Install a theme as a Git submodule
-- Access [commit information] from a local Git repository
-- Host your site with services such as [CloudCannon], [Cloudflare Pages], [GitHub Pages], [GitLab Pages], and [Netlify]
+- Compilar o Hugo a partir do código-fonte
+- Usar o recurso [Módulos do Hugo]
+- Instalar um tema como um submódulo do Git
+- Acessar [informações de commit] de um repositório Git local
+- Hospedar seu site com serviços como [CloudCannon], [Cloudflare Pages],
+  [GitHub Pages], [GitLab Pages] e [Netlify]
 
-Go is required to:
+O Go é necessário para:
 
-- Build Hugo from source
-- Use the Hugo Modules feature
+- Compilar o Hugo a partir do código-fonte
+- Usar o recurso Módulos do Hugo
 
-Dart Sass is required to transpile Sass to CSS when using the latest features of the Sass language.
+O Dart Sass é necessário para transpilar o Sass para CSS ao usar os recursos
+mais recentes da linguagem Sass.
 
-Please refer to the relevant documentation for installation instructions:
+Consulte a documentação relevante para obter instruções de instalação:
 
 - [Git][git install]
 - [Go][go install]
 - [Dart Sass][dart sass install]
 
-[cloudcannon]: https://cloudcannon.com/
-[cloudflare pages]: https://pages.cloudflare.com/
+[CloudCannon]: https://cloudcannon.com/
+
+[Cloudflare Pages]: https://pages.cloudflare.com/
+
 [dart sass install]: /functions/css/sass/#dart-sass
-[dart sass]: https://sass-lang.com/dart-sass
+
+[Dart Sass]: https://sass-lang.com/dart-sass
+
+[Git]: https://git-scm.com/
+
 [git install]: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
-[git]: https://git-scm.com/
-[github pages]: https://pages.github.com/
-[gitlab pages]: https://docs.gitlab.com/ee/user/project/pages/
+
+[GitHub Pages]: https://pages.github.com/
+
+[GitLab Pages]: https://docs.gitlab.com/ee/user/project/pages/
+
+[Go]: https://go.dev/
+
 [go install]: https://go.dev/doc/install
-[go]: https://go.dev/
+
 [netlify]: https://www.netlify.com/
