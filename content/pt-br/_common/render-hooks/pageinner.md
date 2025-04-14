@@ -7,49 +7,67 @@
 # The original work was translated from English into Brazilian Portuguese.
 # https://github.com/gohugoio/hugoDocs/blob/master/content/LICENSE.md
 
+source_url: https://github.com/gohugoio/hugoDocs/blob/master/content/en/_common/render-hooks/pageinner.md
+revision: c540e6d295880311a855308b1e14180cabbcd24a
+status: ready
+
 _comment: Do not remove front matter.
 ---
 
-## PageInner details
+## Detalhes de `PageInner`
 
 {{< new-in 0.125.0 />}}
 
-The primary use case for `PageInner` is to resolve links and [page resources](g) relative to an included `Page`. For example, create an "include" shortcode to compose a page from multiple content files, while preserving a global context for footnotes and the table of contents:
+O principal caso de uso de `PageInner` é resolver links e [page resources](g)
+relativos a uma `Page` incluída.
+Por exemplo, crie um shortcode "include" para compor uma página a partir de
+vários arquivos de conteúdo, preservando um contexto global para notas de rodapé
+e o sumário:
 
 ```go-html-template {file="layouts/shortcodes/include.html" copy=true}
 {{ with .Get 0 }}
   {{ with $.Page.GetPage . }}
     {{- .RenderShortcodes }}
   {{ else }}
-    {{ errorf "The %q shortcode was unable to find %q. See %s" $.Name . $.Position }}
+    {{ errorf "O shortcode %q não conseguiu encontrar %q. Consulte %s" $.Name . $.Position }}
   {{ end }}
 {{ else }}
-  {{ errorf "The %q shortcode requires a positional parameter indicating the logical path of the file to include. See %s" .Name .Position }}
+  {{ errorf "O shortcode %q requer um parâmetro posicional que indique o caminho lógico do arquivo a ser incluído. Consulte %s" .Name .Position }}
 {{ end }}
 ```
 
-Then call the shortcode in your Markdown:
+Em seguida, chame o shortcode no seu Markdown:
 
 ```text {file="content/posts/p1.md"}
 {{%/* include "/posts/p2" */%}}
 ```
 
-Any render hook triggered while rendering `/posts/p2` will get:
+Qualquer hook de renderização acionado durante a renderização de `/posts/p2`
+receberá:
 
-- `/posts/p1` when calling `Page`
-- `/posts/p2` when calling `PageInner`
+- `/posts/p1` ao chamar `Page`
+- `/posts/p2` ao chamar `PageInner`
 
-`PageInner` falls back to the value of `Page` if not relevant, and always returns a value.
+`PageInner` retorna ao valor de `Page` se não for relevante e sempre retorna um
+valor.
 
 > [!note]
-> The `PageInner` method is only relevant for shortcodes that invoke the [`RenderShortcodes`] method, and you must call the shortcode using [Markdown notation].
+> O método `PageInner` é relevante apenas para shortcodes que invocam o método
+> [`RenderShortcodes`], e você deve chamar o shortcode usando
+> [notação Markdown].
 
-As a practical example, Hugo's embedded link and image render hooks use the `PageInner` method to resolve markdown link and image destinations. See the source code for each:
+Como exemplo prático, os hooks de renderização de link e imagem incorporados do
+Hugo usam o método `PageInner` para resolver destinos de link e imagem em
+Markdown.
+Veja o código-fonte de cada um:
 
-- [Embedded link render hook]
-- [Embedded image render hook]
+- [Hook de renderização de link incorporado]
+- [Hook de renderização de imagem incorporada]
 
 [`RenderShortcodes`]: /methods/page/rendershortcodes/
-[Markdown notation]: /content-management/shortcodes/#notation
-[Embedded link render hook]: {{% eturl render-link %}}
-[Embedded image render hook]: {{% eturl render-image %}}
+
+[notação Markdown]: /content-management/shortcodes/#notation
+
+[Hook de renderização de link incorporado]: {{% eturl render-link %}}
+
+[Hook de renderização de imagem incorporada]: {{% eturl render-image %}}
