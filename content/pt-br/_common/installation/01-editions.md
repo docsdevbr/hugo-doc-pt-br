@@ -7,18 +7,28 @@
 # The original work was translated from English into Brazilian Portuguese.
 # https://github.com/gohugoio/hugoDocs/blob/master/content/LICENSE.md
 
+source_url: https://github.com/gohugoio/hugoDocs/blob/master/content/en/_common/installation/01-editions.md
+revision: b6cae5cbc662fa92a00d123bd758fe1205b8a07e
+status: ready
+
 _comment: Do not remove front matter.
 ---
 
-Hugo is available in three editions: standard, extended, and extended/deploy. While the standard edition provides core functionality, the extended and extended/deploy editions offer advanced features.
+O Hugo está disponível em três edições: padrão, estendida e
+estendida/implantação.
+Enquanto a edição padrão oferece funcionalidades básicas, as edições estendida e
+estendida/implantação oferecem recursos avançados.
 
-Feature|extended edition|extended/deploy edition
-:--|:-:|:-:
-Encode to the WebP format when [processing images]. You can decode WebP images with any edition.|:heavy_check_mark:|:heavy_check_mark:
-[Transpile Sass to CSS] using the embedded LibSass transpiler. You can use the [Dart Sass] transpiler with any edition.|:heavy_check_mark:|:heavy_check_mark:
-Deploy your site directly to a Google Cloud Storage bucket, an AWS S3 bucket, or an Azure Storage container. See&nbsp;[details].|:x:|:heavy_check_mark:
+ Recurso                                                                                                                                        |  edição estendida  | edição estendida/de implantação
+:-----------------------------------------------------------------------------------------------------------------------------------------------|:------------------:|:-------------------------------:
+ Codifique para o formato WebP ao [processar imagens]. Você pode decodificar imagens WebP com qualquer edição.                                  | :heavy_check_mark: |       :heavy_check_mark:
+ [Transpile Sass para CSS] usando o transpilador LibSass incorporado. Você pode usar o transpilador [Dart Sass] com qualquer edição.            | :heavy_check_mark: |       :heavy_check_mark:
+ Implante seu site diretamente em um bucket do Google Cloud Storage, um bucket do AWS S3 ou um contêiner do Azure Storage. Consulte [detalhes]. |        :x:         |       :heavy_check_mark:
 
-[dart sass]: /functions/css/sass/#dart-sass
-[processing images]: /content-management/image-processing/
-[transpile sass to css]: /functions/css/sass/
-[details]: /host-and-deploy/deploy-with-hugo-deploy/
+[Dart Sass]: /functions/css/sass/#dart-sass
+
+[detalhes]: /host-and-deploy/deploy-with-hugo-deploy/
+
+[processar imagens]: /content-management/image-processing/
+
+[Transpile Sass para CSS]: /functions/css/sass/
