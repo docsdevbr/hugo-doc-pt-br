@@ -7,52 +7,61 @@
 # The original work was translated from English into Brazilian Portuguese.
 # https://github.com/gohugoio/hugoDocs/blob/master/content/LICENSE.md
 
+source_url: https://github.com/gohugoio/hugoDocs/blob/master/content/en/_common/methods/taxonomy/get-a-taxonomy-object.md
+revision: fd628be6ed3f1150d0030ba1424cc8f2da72efbb
+status: ready
+
 _comment: Do not remove front matter.
 ---
 
-Before we can use a `Taxonomy` method, we need to capture a `Taxonomy` object.
+Antes de podermos usar um método `Taxonomy`, precisamos capturar um objeto
+`Taxonomy`.
 
-## Capture a Taxonomy object
+## Capture um objeto `Taxonomy`
 
-Consider this site configuration:
+Considere esta configuração do site:
 
 {{< code-toggle file=hugo >}}
 [taxonomies]
-genre = 'genres'
-author = 'authors'
+genero = 'generos'
+pessoa autora = 'pessoas autoras'
 {{< /code-toggle >}}
 
-And this content structure:
+E esta estrutura de conteúdo:
 
 ```text
 content/
-├── books/
-│   ├── and-then-there-were-none.md --> genres: suspense
-│   ├── death-on-the-nile.md        --> genres: suspense
-│   └── jamaica-inn.md              --> genres: suspense, romance
-│   └── pride-and-prejudice.md      --> genres: romance
+├── livros/
+│   ├── e-nao-sobrou-nenhum.md    --> generos: suspense
+│   ├── morte-no-nilo.md          --> generos: suspense
+│   ├── a-pousada-da-jamaica.md   --> generos: suspense, romance
+│   └── orgulho-e-preconceito.md  --> generos: romance
 └── _index.md
 ```
 
-To capture the "genres" `Taxonomy` object from within any template, use the [`Taxonomies`] method on a `Site` object.
+Para capturar o objeto `Taxonomy` "generos" de qualquer template, use o método
+[`Taxonomies`] em um objeto `Site`.
 
 ```go-html-template
-{{ $taxonomyObject := .Site.Taxonomies.genres }}
+{{ $taxonomyObject := .Site.Taxonomies.generos }}
 ```
 
-To capture the "genres" `Taxonomy` object when rendering its page with a taxonomy template, use the [`Terms`] method on the page's [`Data`] object:
+Para capturar o objeto `Taxonomy` "generos" ao renderizar sua página com um
+template de taxonomia, use o método [`Terms`] no objeto [`Data`] da página:
 
 ```go-html-template {file="layouts/_default/taxonomy.html"}
 {{ $taxonomyObject := .Data.Terms }}
 ```
 
-To inspect the data structure:
+Para inspecionar a estrutura de dados:
 
 ```go-html-template
 <pre>{{ debug.Dump $taxonomyObject }}</pre>
 ```
 
-Although the [`Alphabetical`] and [`ByCount`] methods provide a better data structure for ranging through the taxonomy, you can render the weighted pages by term directly from the `Taxonomy` object:
+Embora os métodos [`Alphabetical`] e [`ByCount`] forneçam uma estrutura de dados
+melhor para percorrer a taxonomia, você pode renderizar as páginas ponderadas
+por termo diretamente do objeto `Taxonomy`:
 
 ```go-html-template
 {{ range $term, $weightedPages := $taxonomyObject }}
@@ -65,11 +74,14 @@ Although the [`Alphabetical`] and [`ByCount`] methods provide a better data stru
 {{ end }}
 ```
 
-In the example above, the first anchor element is a link to the term page.
+No exemplo acima, o primeiro elemento âncora é um link para a página do termo.
 
 [`Alphabetical`]: /methods/taxonomy/alphabetical/
+
 [`ByCount`]: /methods/taxonomy/bycount/
 
 [`data`]: /methods/page/data/
-[`terms`]: /methods/page/data/#in-a-taxonomy-template
+
 [`taxonomies`]: /methods/site/taxonomies/
+
+[`terms`]: /methods/page/data/#in-a-taxonomy-template
