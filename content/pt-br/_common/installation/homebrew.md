@@ -7,12 +7,18 @@
 # The original work was translated from English into Brazilian Portuguese.
 # https://github.com/gohugoio/hugoDocs/blob/master/content/LICENSE.md
 
+source_url: https://github.com/gohugoio/hugoDocs/blob/master/content/en/_common/installation/homebrew.md
+revision: b6cae5cbc662fa92a00d123bd758fe1205b8a07e
+status: ready
+
 _comment: Do not remove front matter.
 ---
 
 ### Homebrew
 
-[Homebrew] is a free and open-source package manager for macOS and Linux. To install the extended edition of Hugo:
+[Homebrew] é um gerenciador de pacotes gratuito e de código aberto para macOS e
+Linux.
+Para instalar a edição estendida do Hugo:
 
 ```sh
 brew install hugo

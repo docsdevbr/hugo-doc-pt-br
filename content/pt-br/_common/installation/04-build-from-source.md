@@ -28,9 +28,9 @@ código-fonte, você deve:
 > O diretório de instalação é controlado pelas variáveis de ambiente `GOPATH` e
 > `GOBIN`.
 > Se `GOBIN` estiver definida, os binários serão instalados nesse diretório.
-> Se `GOPATH` estiver definida, os binários serão instalados no subdiretório bin
-> do primeiro diretório na lista `GOPATH`.
-> Caso contrário, os binários serão instalados no subdiretório bin do `GOPATH`
+> Se `GOPATH` estiver definida, os binários serão instalados no subdiretório
+> `bin` do primeiro diretório na lista `GOPATH`.
+> Caso contrário, os binários serão instalados no subdiretório `bin` do `GOPATH`
 > padrão (`$HOME/go` ou `%USERPROFILE%\go`).
 
 Para compilar a edição padrão:
