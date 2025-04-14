@@ -7,30 +7,36 @@
 # The original work was translated from English into Brazilian Portuguese.
 # https://github.com/gohugoio/hugoDocs/blob/master/content/LICENSE.md
 
+source_url: https://github.com/gohugoio/hugoDocs/blob/master/content/en/_common/menu-entries/pre-and-post.md
+revision: b6cae5cbc662fa92a00d123bd758fe1205b8a07e
+status: ready
+
 _comment: Do not remove front matter.
 ---
 
-In this site configuration we enable rendering of [emoji shortcodes], and add emoji shortcodes before (pre) and after (post) each menu entry:
+Nesta configuração de site, habilitamos a renderização de [shortcodes de emojis]
+e adicionamos shortcodes de emojis antes (pré) e depois (pós) de cada entrada do
+menu:
 
 {{< code-toggle file=hugo >}}
 enableEmoji = true
 
 [[menus.main]]
-name = 'About'
-pageRef = '/about'
+name = 'Sobre'
+pageRef = '/sobre'
 post = ':point_left:'
 pre = ':point_right:'
 weight = 10
 
 [[menus.main]]
-name = 'Contact'
-pageRef = '/contact'
+name = 'Contato'
+pageRef = '/contato'
 post = ':arrow_left:'
 pre = ':arrow_right:'
 weight = 20
 {{< /code-toggle >}}
 
-To render the menu:
+Para renderizar o menu:
 
 ```go-html-template
 <ul>
@@ -44,4 +50,4 @@ To render the menu:
 </ul>
 ```
 
-[emoji shortcodes]: /quick-reference/emojis/
+[shortcodes de emojis]: /quick-reference/emojis/
